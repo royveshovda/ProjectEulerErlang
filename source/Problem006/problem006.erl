@@ -1,7 +1,6 @@
 -module (problem006).
 -export ([run/0]).
 
-%%Problem: https://projecteuler.net/problem=6
 %%Correct: 25164150
 
 %%Sum of i where i from 1 to n = n * (n+1)/2 = 5050

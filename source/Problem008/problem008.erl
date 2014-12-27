@@ -1,7 +1,6 @@
 -module (problem008).
 -export ([run/0]).
 
-%%Problem: https://projecteuler.net/problem=8
 %%Correct: 23514624000
 
 run() ->

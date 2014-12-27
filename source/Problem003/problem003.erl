@@ -1,16 +1,14 @@
 -module (problem003).
 -export ([run/0]).
 
-%%Problem: https://projecteuler.net/problem=3
-%%Correct: ??
+%%Correct: 6857
 
 run() ->
-    find_factors(600851475143,2,[]).
+    max_factor(600851475143,2,2).
 
-find_factors(N, F, Acc) when (N / 2 >= F) ->
-    if
-        (N rem F == 0) -> find_factors(N, F+1, [F|Acc]);
-        true -> find_factors(N, F+1, Acc)
-    end;
-find_factors(N, F, Acc) when (N / 2 < F) ->
-    Acc.
+max_factor(Number, Factor, Max) when Factor > Number ->
+    Max;
+max_factor(Number, Factor, _) when (Number rem Factor) == 0 ->
+    max_factor(trunc(Number / Factor), Factor, Factor);
+max_factor(Number, Factor, Max) ->
+    max_factor(Number, Factor + 1, Max).
