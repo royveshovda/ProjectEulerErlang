@@ -9,6 +9,6 @@ Power digit sum
 What is the sum of the digits of the number 2^1000?
 
 
-Answer: ???
+Answer: 1366
 
 Link: https://projecteuler.net/problem=16
