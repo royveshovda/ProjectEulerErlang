@@ -5,9 +5,7 @@ run() ->
     L = lists:seq(1,10000),
     F = fun(X) -> is_amicable(X) end,
     Numbers = lists:filter(F, L),
-    %[{X, sum_of_factors(X)} || X <- Numbers].
     lists:sum(Numbers).
-    %Numbers.
 
 is_amicable(N) ->
     Pair_candidate = sum_of_factors(N),
