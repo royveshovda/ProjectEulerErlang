@@ -1,4 +1,4 @@
--module (problem001).
+-module (p001).
 -export([run/0]).
 
 %%Correct: 233168

@@ -1,4 +1,4 @@
--module (problem014).
+-module (p014).
 -export ([run/0]).
 
 %%Solution: 837799

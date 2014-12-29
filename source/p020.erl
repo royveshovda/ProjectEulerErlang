@@ -1,4 +1,4 @@
--module (problem020).
+-module (p020).
 -export ([run/0]).
 
 %% Solution: 648

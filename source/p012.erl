@@ -1,4 +1,4 @@
--module (problem012).
+-module (p012).
 -export ([run/0]).
 
 run() ->
