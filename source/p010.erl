@@ -1,6 +1,8 @@
 -module (p010).
 -export ([run/0]).
 
+%% Correct: 142913828922
+
 run() ->
     solution(2000000).
 
