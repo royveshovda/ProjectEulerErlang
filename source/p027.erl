@@ -1,5 +1,6 @@
 -module (p027).
 -export ([run/0]).
+-import (calculator, [is_prime/1]).
 
 %% Correct: -59231
 
@@ -25,19 +26,4 @@ sequence_of_primes(A,B,N) ->
     if
         Is_prime == true -> sequence_of_primes(A,B,N+1);
         true -> N
-    end.
-
-
-is_prime(N) when N < 0 ->
-    false;
-is_prime(2) -> true;
-is_prime(N) ->
-    N rem 2 =/= 0 andalso is_prime(N, 3, math:sqrt(N)).
-
-is_prime(_, Div, Sqrt) when Div > Sqrt ->
-    true;
-is_prime(N, Div, Sqrt) ->
-    case N rem Div =:= 0 of
-        true -> false;
-        _ -> is_prime(N, Div + 2, Sqrt)
     end.
