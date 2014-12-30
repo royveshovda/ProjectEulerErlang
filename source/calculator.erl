@@ -1,5 +1,5 @@
 -module (calculator).
--export ([pow/2, get_digits/1, factorial/1, is_prime/1]).
+-export ([pow/2, get_digits/1, factorial/1, is_prime/1, assemble_number/1, permute/1]).
 
 pow(X, N) when is_integer(N), N >= 0 -> pow(X, N, 1);
 pow(X, N) when is_integer(N) -> 1 / pow(X, -N, 1);
@@ -35,3 +35,15 @@ is_prime(N, Div, Sqrt) ->
         true -> false;
         _ -> is_prime(N, Div + 2, Sqrt)
     end.
+
+permute([]) -> [[]];
+permute(L) -> [[X|Y] || X<-L, Y<-permute(L--[X])].
+
+assemble_number(L) ->
+    assemble_number(L,length(L)-1,0).
+
+assemble_number([], _, Acc) ->
+    Acc;
+assemble_number([H|T],Multiplier, Acc) ->
+    New_acc = Acc + (H * pow(10,Multiplier)),
+    assemble_number(T, Multiplier-1, New_acc).
