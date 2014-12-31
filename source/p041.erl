@@ -1,6 +1,6 @@
 -module (p041).
 -export ([run/0]).
--import (calculator, [get_digits/1, assemble_number/1, is_prime/1, permute/1]).
+-import (calculator, [to_digits/1, assemble_number/1, is_prime/1, permute/1]).
 
 %% Correct: 7652413
 
@@ -21,6 +21,6 @@ find_below(Limit) ->
     end.
 
 is_pan_digital(N) ->
-    Ns = get_digits(N),
+    Ns = to_digits(N),
     Length = length(Ns),
     lists:usort(Ns) == lists:seq(1,Length).

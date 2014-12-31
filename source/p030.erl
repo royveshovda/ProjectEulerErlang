@@ -1,6 +1,6 @@
 -module (p030).
 -export ([run/0]).
--import (calculator, [pow/2, get_digits/1]).
+-import (calculator, [pow/2, to_digits/1]).
 
 %% Correct: 443839
 
@@ -10,5 +10,5 @@ run() ->
     lists:sum(Powers).
 
 check(N) ->
-    Digits = get_digits(N),
+    Digits = to_digits(N),
     N == lists:sum([pow(X,5) || X <- Digits]).

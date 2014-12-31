@@ -1,6 +1,6 @@
 -module (p032).
 -export ([run/0]).
--import (calculator, [get_digits/1]).
+-import (calculator, [to_digits/1]).
 
 %% Correct: 45228
 
@@ -14,9 +14,9 @@ run() ->
 
 is_pan_digital_to_9(A,B) ->
     Product = A * B,
-    As = get_digits(A),
-    Bs = get_digits(B),
-    Ps = get_digits(Product),
+    As = to_digits(A),
+    Bs = to_digits(B),
+    Ps = to_digits(Product),
     Length = length(As) + length(Bs) + length(Ps),
     if
         Length == 9 -> 
