@@ -22,7 +22,7 @@ factorial(1) ->
 factorial(N) ->
     N* factorial(N-1).
 
-is_prime(N) when N < 0 ->
+is_prime(N) when N < 2 ->
     false;
 is_prime(2) -> true;
 is_prime(N) ->
