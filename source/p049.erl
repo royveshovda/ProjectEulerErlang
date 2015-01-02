@@ -1,11 +1,12 @@
 -module (p049).
 -export ([solve/0]).
--import (calculator, [primes_below/1, to_digits/1, permute/1, assemble_number/1]).
+-import (calculator, [to_digits/1, permute/1, assemble_number/1]).
 
 %% Correct: 296962999629
 
 solve() ->
-    Primes = primes_below(9999),
+    prime_server:start_link(10000),
+    Primes = prime_server:sieve(9999),
     Candidates_raw = lists:filter(fun(X) -> X > 999 end, Primes),
     Candidates = lists:filter(fun(X) -> (X /= 1487) and (X /= 4817) and (X /= 8147) end, Candidates_raw),
     Candidates_with_digits = lists:map(fun(X) -> {X, sorted_digits(X)} end, Candidates),
@@ -16,7 +17,9 @@ solve() ->
     Bs = to_digits(B),
     Cs = to_digits(C),
     Match = As ++ Bs ++ Cs,
-    assemble_number(Match).
+    Ans = assemble_number(Match),
+    prime_server:stop(),
+    Ans.
 
 permute_3(L) ->
     [[X,Y,Z] || X <- L, Y <- L--[X], Z <- L--[X]--[Y]]. 
