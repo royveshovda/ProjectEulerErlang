@@ -19,7 +19,6 @@ apply_index([Head|Tail], Index, Acc) ->
     Elem = {Head, Index},
     apply_index(Tail, Index+1, [Elem|Acc]).
 
-
 open_file(Filename) ->
     {ok, Device} = file:open(Filename, [read]),
     {ok, Raw} = file:read_line(Device),
