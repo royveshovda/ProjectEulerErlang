@@ -1,9 +1,9 @@
 -module (p022).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 871198282
 
-run() ->
+solve() ->
     Filename = "../Problems/p022_names.txt",
     Names = open_file(Filename),
     Sorted_list = lists:sort(Names),

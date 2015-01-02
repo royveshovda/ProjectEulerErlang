@@ -1,9 +1,9 @@
 -module (p012).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 76576500
 
-run() ->
+solve() ->
     N=500,
     next(2, [2], [1], N).
 

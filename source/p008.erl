@@ -1,9 +1,9 @@
 -module (p008).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Correct: 23514624000
 
-run() ->
+solve() ->
     get_numbers(13).
 
 product(List) ->

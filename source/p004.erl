@@ -1,9 +1,9 @@
 -module (p004).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Correct: 906609
 
-run() ->
+solve() ->
     Candidates = [X*Y || X <- lists:seq(100, 999), Y <- lists:seq(100, 999), is_palindrome(X*Y)],
     lists:max(Candidates).
 

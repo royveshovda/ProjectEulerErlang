@@ -1,9 +1,9 @@
 -module (p021).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 31626
 
-run() ->
+solve() ->
     L = lists:seq(1,10000),
     F = fun(X) -> is_amicable(X) end,
     Numbers = lists:filter(F, L),

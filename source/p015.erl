@@ -1,10 +1,10 @@
 -module (p015).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [factorial/1]).
 
 %Correct: 137846528820
 
-run() ->
+solve() ->
     calculate(20,20).
 
 calculate(X,Y) ->

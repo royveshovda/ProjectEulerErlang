@@ -1,10 +1,10 @@
 -module (p027).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [is_prime/1]).
 
 %% Correct: -59231
 
-run() ->
+solve() ->
     As = lists:seq(-999,999),
     Bs = lists:seq(-999,999),
     Lengths = [{A,B,sequence_of_primes(A,B)} || A <- As, B <- Bs],

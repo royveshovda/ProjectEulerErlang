@@ -1,9 +1,9 @@
 -module (p048).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [pow/2]).
 %% Correct: 9110846700
 
-run() ->
+solve() ->
     Ns = lists:seq(1,1000),
     Products = lists:map(fun(X) -> pow(X,X) end, Ns),
     Solution = lists:sum(Products),

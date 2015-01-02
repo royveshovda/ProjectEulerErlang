@@ -1,9 +1,9 @@
 -module (p014).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Solution: 837799
 
-run() ->
+solve() ->
     I = lists:seq(1,999999),
     Chains = [build_chain(X) || X <- I],
     find_max(Chains, {0,0}).

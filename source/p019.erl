@@ -1,9 +1,9 @@
 -module (p019).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Solution: 171
 
-run() ->
+solve() ->
     check_date(1901,1,0).
 
 check_date(2001,1, Sundays) ->

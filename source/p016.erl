@@ -1,9 +1,9 @@
 -module (p016).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Solution: 1366
 
-run() ->
+solve() ->
     S = get_number(),
     D = get_digits(S),
     lists:sum(D).

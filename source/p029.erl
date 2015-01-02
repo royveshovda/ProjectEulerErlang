@@ -1,10 +1,10 @@
 -module (p029).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [pow/2]).
 
 %% Correct: 9183
 
-run() ->
+solve() ->
     As = lists:seq(2,100),
     Bs = lists:seq(2,100),
     Raw = [pow(A,B) || A <- As, B <- Bs],

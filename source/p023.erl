@@ -1,9 +1,9 @@
 -module (p023).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 4179871
 
-run() ->
+solve() ->
     Max = 28123,
     Candidates = lists:seq(1,Max),
     Abundant = lists:filter(fun(X) -> is_abundant(X) end, Candidates),

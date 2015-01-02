@@ -1,9 +1,9 @@
 -module (p017).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 21124
 
-run() ->
+solve() ->
     Seq = lists:seq(1,1000),
     Sums = [count(convert(X)) || X <- Seq],
     lists:sum(Sums).

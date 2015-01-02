@@ -1,10 +1,10 @@
 -module (p049).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [primes_below/1, to_digits/1, permute/1, assemble_number/1]).
 
 %% Correct: 296962999629
 
-run() ->
+solve() ->
     Primes = primes_below(9999),
     Candidates_raw = lists:filter(fun(X) -> X > 999 end, Primes),
     Candidates = lists:filter(fun(X) -> (X /= 1487) and (X /= 4817) and (X /= 8147) end, Candidates_raw),

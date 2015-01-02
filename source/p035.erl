@@ -1,10 +1,10 @@
 -module (p035).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [to_digits/1, assemble_number/1, is_prime/1, primes_below/1]).
 
 %% Correct: 55
 
-run() ->
+solve() ->
     Primes = primes_below(1000000),
     Circulars = lists:filter(fun(X) -> all_rotation_prime(X) end, Primes),
     length(Circulars).

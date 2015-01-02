@@ -1,9 +1,9 @@
 -module (p002).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Correct: 4613732
 
-run() ->
+solve() ->
     fibonachi_below(4000000).
     
 fibonachi_below(Max) ->

@@ -1,9 +1,9 @@
 -module (p010).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 142913828922
 
-run() ->
+solve() ->
     solution(2000000).
 
 

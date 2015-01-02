@@ -1,9 +1,9 @@
 -module (p011).
--export ([run/0]).
+-export ([solve/0]).
 
 %Correct: 70600674
 
-run() ->
+solve() ->
     M = get_matrix(),
     Positions = [{X,Y} || X <- lists:seq(1,20), Y <- lists:seq(1,20)],
     Values = [get_products(M,X,Y) || {X,Y} <- Positions],

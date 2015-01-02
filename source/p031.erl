@@ -1,9 +1,9 @@
 -module (p031).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 73682
 
-run() ->
+solve() ->
     count(200, coins()).
 
 count(Amount, Coins) ->

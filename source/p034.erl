@@ -1,9 +1,9 @@
 -module (p034).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 40730
 
-run() ->
+solve() ->
     Max = 2540160,
     Candidates = lists:seq(3, Max),
     Factorials = digit_factorials(),

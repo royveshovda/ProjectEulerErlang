@@ -1,9 +1,9 @@
 -module (p036).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 872187
 
-run() ->
+solve() ->
     Candidates = lists:seq(1,1000000),
     Pals = lists:filter(fun(X) -> is_2_base_palindrome(X) end, Candidates),
     lists:sum(Pals).

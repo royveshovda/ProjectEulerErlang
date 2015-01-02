@@ -1,10 +1,10 @@
 -module (p041).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [to_digits/1, assemble_number/1, is_prime/1, permute/1]).
 
 %% Correct: 7652413
 
-run() ->
+solve() ->
     find_below(9).
 
 find_below(Limit) ->

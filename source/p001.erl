@@ -1,9 +1,9 @@
 -module (p001).
--export([run/0]).
+-export([solve/0]).
 
 %%Correct: 233168
 
-run() ->
+solve() ->
     sum(999, 0).
 
 sum(0, Acc) ->

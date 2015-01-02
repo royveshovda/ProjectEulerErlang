@@ -1,10 +1,10 @@
 -module (p033).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [to_digits/1]).
 
 %% Correct: 100
 
-run() ->
+solve() ->
     Candidates = get_candidates(),
     Results_raw = lists:filter(fun(X) -> check(X) end, Candidates),
     Results = lists:map(fun(X) -> decorate(X) end, Results_raw),

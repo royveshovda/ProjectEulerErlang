@@ -1,9 +1,9 @@
 -module (p067).
--export ([run/0]).
+-export ([solve/0]).
 -import (p018, [evaluate/1]).
 
 %% Correct: 7273
 
-run() ->
+solve() ->
     Filename = "../Problems/p067_triangle.txt",
     p018:evaluate(Filename).

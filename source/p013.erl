@@ -1,9 +1,9 @@
 -module (p013).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Correct: 5537376230... (5537376230390876637302048746832985971773659831892672)
 
-run() ->
+solve() ->
     N = get_numbers(),
     lists:sum(N).
 

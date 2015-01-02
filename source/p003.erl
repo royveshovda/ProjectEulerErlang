@@ -1,9 +1,9 @@
 -module (p003).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Correct: 6857
 
-run() ->
+solve() ->
     max_factor(600851475143,2,2).
 
 max_factor(Number, Factor, Max) when Factor > Number ->

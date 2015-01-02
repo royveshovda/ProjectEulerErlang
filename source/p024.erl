@@ -1,10 +1,10 @@
 -module (p024).
--export([run/0]).
+-export([solve/0]).
 -import (calculator, [permute/1, assemble_number/1]).
 
 %%Correct: 2783915460
 
-run() ->
+solve() ->
     L = [0,1,2,3,4,5,6,7,8,9],
     Perms = permute(L),
     Number = lists:nth(1000000,Perms),

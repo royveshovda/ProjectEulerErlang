@@ -1,10 +1,10 @@
 -module (p037).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [to_digits/1, assemble_number/1, is_prime/1, primes_below/1]).
 
 %% Correct: 748317
 
-run() ->
+solve() ->
     Primes = primes_below(800000),
     Above10 = lists:filter(fun(X) -> X > 10 end, Primes),
     Results = lists:filter(fun(X) -> is_valid(X) end, Above10),

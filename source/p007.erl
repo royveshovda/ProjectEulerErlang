@@ -1,7 +1,7 @@
 -module (p007).
--export ([run/0]).
+-export ([solve/0]).
 
-run() ->
+solve() ->
     prime_number(10001).
 
 prime_number(1) -> 2;

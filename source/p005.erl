@@ -1,9 +1,9 @@
 -module (p005).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Correct: 232792560
 
-run() ->
+solve() ->
     seek(19, 19).
 
 seek(N, Add) ->

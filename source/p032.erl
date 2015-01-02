@@ -1,10 +1,10 @@
 -module (p032).
--export ([run/0]).
+-export ([solve/0]).
 -import (calculator, [to_digits/1]).
 
 %% Correct: 45228
 
-run() ->
+solve() ->
     As = lists:seq(1, 100),
     Bs = lists:seq(10,4000),
     Cases = [{A,B}|| A <- As, B <- Bs],

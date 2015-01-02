@@ -1,9 +1,9 @@
 -module (p028).
--export ([run/0]).
+-export ([solve/0]).
 
 %% Correct: 669171001
 
-run() ->
+solve() ->
     spiral(1001,0).
 
 %Sum of the Nth corners:

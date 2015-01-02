@@ -1,9 +1,9 @@
 -module (p009).
--export ([run/0]).
+-export ([solve/0]).
 
 %%Correct: 31875000 (200, 375, 425)
 
-run() ->
+solve() ->
     As = lists:seq(1,332),
     Bs = lists:seq(2,666),
     Cs = lists:seq(333,997),
