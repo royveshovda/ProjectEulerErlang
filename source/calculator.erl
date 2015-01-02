@@ -1,5 +1,5 @@
 -module (calculator).
--export ([pow/2, to_digits/1, factorial/1, is_prime/1, assemble_number/1, permute/1]).
+-export ([pow/2, to_digits/1, factorial/1, assemble_number/1, permute/1]).
 
 pow(X, N) when is_integer(N), N >= 0 -> pow(X, N, 1);
 pow(X, N) when is_integer(N) -> 1 / pow(X, -N, 1);
