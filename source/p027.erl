@@ -6,7 +6,6 @@
 solve() ->
     prime_server:start_link(1000000),
     
-    
     As = lists:seq(-999,999),
     Bs = lists:seq(-999,999),
     Lengths = [{A,B,sequence_of_primes(A,B)} || A <- As, B <- Bs],
