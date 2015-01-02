@@ -17,8 +17,8 @@ to_digits(0, Acc) ->
 to_digits(N, Acc) ->
     to_digits(N div 10, [N rem 10|Acc]).
 
-factorial(1) ->
-    1;
+factorial(0) -> 1;
+factorial(1) -> 1;
 factorial(N) ->
     N* factorial(N-1).
 
