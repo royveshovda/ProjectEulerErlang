@@ -1,6 +1,7 @@
 -module (p001).
 -export([solve/0]).
 
+%%Link: https://projecteuler.net/problem=1
 %%Correct: 233168
 
 solve() ->

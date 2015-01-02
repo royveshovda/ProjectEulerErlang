@@ -57,8 +57,8 @@ solve(N) -> gen_server:call(?MODULE, {solve, N}, 120000).
 solve_all() ->
     start_link(),
     L1 = lists:seq(1,25),
-    L2 = lists:seq(1,37) ++ [41,48,49],
-    L3 = [67],
+    L2 = lists:seq(26,45) ++ [48,49],
+    L3 = [52,67],
     L4 = [97],
     L5 = [],
     L6 = [],

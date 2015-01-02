@@ -1,6 +1,7 @@
 -module (p019).
 -export ([solve/0]).
 
+%%Link: https://projecteuler.net/problem=19
 %% Solution: 171
 
 solve() ->

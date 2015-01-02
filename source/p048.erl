@@ -1,6 +1,8 @@
 -module (p048).
 -export ([solve/0]).
 -import (calculator, [pow/2]).
+
+%%Link: https://projecteuler.net/problem=48
 %% Correct: 9110846700
 
 solve() ->

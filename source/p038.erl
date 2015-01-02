@@ -2,6 +2,7 @@
 -export ([solve/0]).
 -import (calculator, [to_digits/1, assemble_number/1]).
 
+%%Link: https://projecteuler.net/problem=38
 %% Correct: 932718654
 
 solve() ->

@@ -2,10 +2,11 @@
 -export ([solve/0]).
 -import (calculator, [alphabetical_value/1]).
 
+%%Link: https://projecteuler.net/problem=42
 %% Correct: 162
 
 solve() ->
-	Filename = "../Problems/p042_words.txt",
+	Filename = "data/p042_words.txt",
 	Names = open_file(Filename),
 	Values = lists:map(fun(X) -> alphabetical_value(X) end, Names),
 	Max = lists:max(Values),

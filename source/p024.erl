@@ -2,6 +2,7 @@
 -export([solve/0]).
 -import (calculator, [permute/1, assemble_number/1]).
 
+%%Link: https://projecteuler.net/problem=24
 %%Correct: 2783915460
 
 solve() ->

@@ -1,6 +1,7 @@
 -module (p040).
 -export ([solve/0]).
 
+%%Link: https://projecteuler.net/problem=40
 %% Correct: 210
 
 solve() ->

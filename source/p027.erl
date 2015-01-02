@@ -2,6 +2,7 @@
 -export ([solve/0]).
 -import (primes, [is_prime/1]).
 
+%%Link: https://projecteuler.net/problem=27
 %% Correct: -59231
 
 solve() ->
