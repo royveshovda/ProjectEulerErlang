@@ -1,6 +1,6 @@
 -module (p027).
 -export ([solve/0]).
--import (calculator, [is_prime/1]).
+-import (primes, [is_prime/1]).
 
 %% Correct: -59231
 

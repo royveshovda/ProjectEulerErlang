@@ -1,5 +1,5 @@
 -module (calculator).
--export ([pow/2, to_digits/1, factorial/1, is_prime/1, assemble_number/1, permute/1, primes_below/1]).
+-export ([pow/2, to_digits/1, factorial/1, is_prime/1, assemble_number/1, permute/1]).
 
 pow(X, N) when is_integer(N), N >= 0 -> pow(X, N, 1);
 pow(X, N) when is_integer(N) -> 1 / pow(X, -N, 1);
@@ -22,20 +22,6 @@ factorial(1) ->
 factorial(N) ->
     N* factorial(N-1).
 
-is_prime(N) when N < 2 ->
-    false;
-is_prime(2) -> true;
-is_prime(N) ->
-    N rem 2 =/= 0 andalso is_prime(N, 3, math:sqrt(N)).
-
-is_prime(_, Div, Sqrt) when Div > Sqrt ->
-    true;
-is_prime(N, Div, Sqrt) ->
-    case N rem Div =:= 0 of
-        true -> false;
-        _ -> is_prime(N, Div + 2, Sqrt)
-    end.
-
 permute([]) -> [[]];
 permute(L) -> [[X|Y] || X<-L, Y<-permute(L--[X])].
 
@@ -47,25 +33,3 @@ assemble_number([], _, Acc) ->
 assemble_number([H|T],Multiplier, Acc) ->
     New_acc = Acc + (H * pow(10,Multiplier)),
     assemble_number(T, Multiplier-1, New_acc).
-
-primes_below(1) -> [];
-primes_below(2) -> 2;
-primes_below(Max) -> primes(3,Max,[2]).
-
-primes(N, Max, Acc) ->
-    case check_prime(N, math:sqrt(N), Acc) of
-        true ->
-            case N > Max of
-                true ->
-                    Acc;
-                false -> primes(N + 2, Max, Acc ++ [N])
-            end;
-        _ -> primes(N + 2, Max, Acc)
-    end.
-
-check_prime(_, _, []) -> true;
-check_prime(N, Sqrt, [H|T]) ->
-    case (H > Sqrt) of
-        true -> true;
-        _ -> (N rem H =/= 0) andalso check_prime(N, Sqrt, T)
-    end.
