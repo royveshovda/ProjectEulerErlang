@@ -122,6 +122,8 @@ get_problems(Type) ->
         {49,fast},
 
         %>=50
+        {50,medium},
+        
         {52,fast},
         {54,fast},
         {67,fast},
