@@ -2,9 +2,9 @@
 
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
 -export([start_link/0, stop/0,
-        solve/1, solve_all/0]).
+        solve/1, solve_with_benchmark/1, solve_all/0, solve_all/1]).
 
--define(TIMEOUT, 500000).
+-define(TIMEOUT, 5000000).
 
 start_link() ->
     solver_level_1_server:start_link(),
@@ -54,42 +54,103 @@ stop() ->
     solver_level_20_server:stop(),
     gen_server:cast(?MODULE, stop).
 
-solve(N) -> gen_server:call(?MODULE, {solve, N}, ?TIMEOUT).
+solve(N) ->
+    gen_server:call(?MODULE, {solve, N}, ?TIMEOUT).
+
+solve_with_benchmark(N) ->
+    common:benchmark_with_result(fun() -> gen_server:call(?MODULE, {solve, N}, ?TIMEOUT) end).    
+
+get_problems(Type) ->
+    Problems = [
+        %1-9
+        {1,fast},
+        {2,fast},
+        {3,fast},
+        {4,fast},
+        {5,medium},
+        {6,fast},
+        {7,fast},
+        {8,fast},
+        {9,slow},
+
+        %10-19
+        {10,medium},
+        {11,fast},
+        {12,fast},
+        {13,fast},
+        {14,slow},
+        {15,fast},
+        {16,fast},
+        {17,fast},
+        {18,fast},
+        {19,fast},
+
+        %20-29
+        {20,fast},
+        {21,medium},
+        {22,fast},
+        {23,medium},
+        {24,medium},
+        {25,fast},
+        {26,fast},
+        {27,medium},
+        {28,fast},
+        {29,fast},
+
+        %30-39
+        {30,fast},
+        {31,fast},
+        {32,fast},
+        {33,fast},
+        {34,medium},
+        {35,medium},
+        {36,fast},
+        {37,medium},
+        {38,fast},
+        {39,slow},
+
+        %40-49
+        {40,fast},
+        {41,medium},
+        {42,fast},
+        {43,medium},
+        {44,medium},
+        {45,fast},
+        {46,medium},
+        {47,slow},
+        {48,fast},
+        {49,fast},
+
+        %>=50
+        {52,fast},
+        {54,fast},
+        {67,fast},
+        {97,medium}
+    ],
+    case Type of
+        all -> Problems;
+        X -> lists:filter(fun({_,T}) -> T == X end, Problems)
+    end.
+
+solve_all(Type) ->
+    start_link(),
+    Problems = get_problems(Type),
+    Results = lists:map(fun({X,_}) -> {X,solve_with_benchmark(X)} end, Problems),
+    stop(),
+    print_results_with_benchmark(Results).
 
 solve_all() ->
-    start_link(),
-    L1 = lists:seq(1,25),
-    L2 = lists:seq(26,49),
-    L3 = lists:seq(52,54) ++ [67],
-    L4 = [97],
-    L5 = [],
-    L6 = [],
-    L7 = [],
-    L8 = [],
-    L9 = [],
-    L10 = [],
-    L11 = [],
-    L12 = [],
-    L13 = [],
-    L14 = [],
-    L15 = [],
-    L16 = [],
-    L17 = [],
-    L18 = [],
-    L19 = [],
-    L20 = [],
-    
-    All = L1 ++ L2 ++ L3 ++ L4 ++ L5 ++ L6 ++ L7 ++ L8 ++ L9 ++ L10 ++
-         L11 ++ L12 ++ L13 ++ L14 ++ L15 ++ L16 ++ L17 ++ L18 ++ L19 ++ L20,
-    Results = lists:map(fun(X) -> {X,solve(X)} end, All),
-    stop(),
-    print_results(Results).
+    solve_all(all).
 
-print_results([]) -> ok;
-print_results([{N, Result}|Rest]) ->
-    io:format("Problem ~p : ~p~n",[N,Result]),
-    print_results(Rest).
+print_results_with_benchmark([]) -> ok;
+print_results_with_benchmark([{N, {Result, Runtime}}|Rest]) ->
+    io:format("Problem ~p : ~p (~p microseconds)~n",[N,Result,Runtime]),
+    print_results_with_benchmark(Rest).
 
+%print_results([]) -> ok;
+%print_results([{N, Result}|Rest]) ->
+%    io:format("Problem ~p : ~p~n",[N,Result]),
+%    print_results(Rest).
 
 handle_call({solve, N}, _From, State) ->
     Level = get_level(N),
