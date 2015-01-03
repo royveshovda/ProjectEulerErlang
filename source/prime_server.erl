@@ -6,6 +6,8 @@
 		sieve/1, factors/1, count_factors/1,
 		iterator/0, is_prime/1, nth/1, filter_primes/1]).
 
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
+
 %%TODO: Improve by generating more primes in the background
 
 start_link() -> gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).

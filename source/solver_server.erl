@@ -121,12 +121,31 @@ get_problems(Type) ->
         {48,fast},
         {49,fast},
 
-        %>=50
+        %50-59
         {50,medium},
-        
+        %{51,unknown},
         {52,fast},
+        %{53,unknown},
         {54,fast},
+        {55,fast},
+        {56,fast},
+        {57,fast},
+        {58,fast},
+        %{59,unknown},
+
+        %60-69
+        %{60,unknown},
+        %{61,unknown},
+        %{62,unknown},
+        {63,fast},
+        %{64,unknown},
+        %{65,unknown},
+        %{66,unknown},
         {67,fast},
+        %{68,unknown},
+        {69,fast},
+
+        % >= 70
         {97,medium}
     ],
     case Type of

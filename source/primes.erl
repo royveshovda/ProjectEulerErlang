@@ -9,6 +9,9 @@
 		count_factors/2,
 		filter_primes/1
 		]).
+
+%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
+
 %% use a priority queue, or skew heap, to store interators for primes
 queue(2) -> [2];
 queue(N) when N < 2 -> [];
