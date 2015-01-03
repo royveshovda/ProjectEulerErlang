@@ -1,5 +1,13 @@
 -module (calculator).
--export ([pow/2, to_digits/1, factorial/1, assemble_number/1, permute/1, alphabetical_value/1]).
+-export ([
+            pow/2,
+            to_digits/1,
+            factorial/1,
+            assemble_number/1,
+            permute/1,
+            alphabetical_value/1,
+            is_palindrome/1
+        ]).
 
 pow(X, N) when is_integer(N), N >= 0 -> pow(X, N, 1);
 pow(X, N) when is_integer(N) -> 1 / pow(X, -N, 1);
@@ -33,6 +41,10 @@ assemble_number([], _, Acc) ->
 assemble_number([H|T],Multiplier, Acc) ->
     New_acc = Acc + (H * pow(10,Multiplier)),
     assemble_number(T, Multiplier-1, New_acc).
+
+is_palindrome(N) ->
+    Rev = list_to_integer(lists:reverse(integer_to_list(N))),
+    Rev == N.
 
 alphabetical_value(String) ->
     L = string:len(String),
