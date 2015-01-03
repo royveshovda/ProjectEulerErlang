@@ -10,7 +10,7 @@ init([]) -> {ok, {}}.
 
 stop() -> gen_server:cast(?MODULE, stop).
 
-solve(N) -> gen_server:call(?MODULE, {solve, N}, 120000).
+solve(N) -> gen_server:call(?MODULE, {solve, N}, 500000).
 
 handle_call({solve, N}, _From, State) ->
     Result = case N of

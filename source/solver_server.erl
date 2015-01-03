@@ -52,13 +52,13 @@ stop() ->
     solver_level_20_server:stop(),
     gen_server:cast(?MODULE, stop).
 
-solve(N) -> gen_server:call(?MODULE, {solve, N}, 120000).
+solve(N) -> gen_server:call(?MODULE, {solve, N}, 500000).
 
 solve_all() ->
     start_link(),
     L1 = lists:seq(1,25),
-    L2 = lists:seq(26,45) ++ [48,49],
-    L3 = [52,67],
+    L2 = lists:seq(26,49),
+    L3 = lists:seq(52,54) ++ [67],
     L4 = [97],
     L5 = [],
     L6 = [],
