@@ -146,7 +146,8 @@ get_problems(Type) ->
         {69,fast},
 
         % >= 70
-        {97,medium}
+        {97,medium},
+        {99,fast}
     ],
     case Type of
         all -> Problems;
