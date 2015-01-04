@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"get_answer"
+			],
+			[
+				"check",
+				"check2"
+			],
+			[
+				"D",
+				"D2_4"
+			],
+			[
+				"t",
+				"to_digits"
+			],
+			[
 				"DateO",
 				"DateOfBirth"
 			],
@@ -98,10 +114,6 @@
 			[
 				"Prote",
 				"Proteins"
-			],
-			[
-				"get",
-				"get_expected"
 			],
 			[
 				"print",
@@ -395,6 +407,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "solve_server.erl",
+			"settings":
+			{
+				"buffer_size": 7139,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "answers.erl",
+			"settings":
+			{
+				"buffer_size": 3867,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "p071.erl",
+			"settings":
+			{
+				"buffer_size": 361,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -501,11 +537,112 @@
 	"expanded_folders":
 	[
 		"/C/Users/Roy/src/ProjectEulerErlang",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems",
 		"/C/Users/Roy/src/ProjectEulerErlang/source"
 	],
 	"file_history":
 	[
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p092.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/answers.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/my_math.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p073.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p012.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p011.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p013.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p014.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p015.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p016.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p017.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p018.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p019.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p020.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p021.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p056.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p099.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p097.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p079.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p069.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p068.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p067.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p063.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p059.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p058.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p057.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p055.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p054.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p053.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p052.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p051.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p050.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p049.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p048.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p047.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p046.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p045.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p044.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p043.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p042.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p041.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p040.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p039.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p038.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p037.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p036.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p035.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p034.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p033.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p032.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p031.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p030.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p025.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p024.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p023.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p022.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p029.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p028.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p027.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p026.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_10_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_11_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_12_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_13_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_14_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_15_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_16_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_17_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_18_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_19_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_1_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_20_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_2_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_3_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_4_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_5_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_6_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_7_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_8_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_9_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p006.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p007.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p008.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p009.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p010.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p003.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p005.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p002.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p001.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/README.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p004.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solver_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/calculator.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P040.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P042.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P039.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P043.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P038.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/prime_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/primes.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/skew_kv.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P053.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P054.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P055.md",
@@ -522,7 +659,6 @@
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P058.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P057.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P056.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/source/p097.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P097.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P052.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P051.md",
@@ -532,108 +668,7 @@
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P077.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P076.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P075.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P073.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P074.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P072.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P071.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P070.md",
-		"/C/Users/Roy/src/SolvingChristmasCalendar/source/Data/words.txt",
-		"/C/Users/Roy/src/FSharp.playground/source/MonaLisa/README.md",
-		"/C/Users/Roy/src/AtMiles/docs/README.md",
-		"/C/Users/Roy/src/AtMiles/docs/api/status/status.md",
-		"/C/Users/Roy/src/AtMiles/docs/api/status/get.md",
-		"/C/Users/Roy/src/AtMiles/docs/api/api.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/status/status.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/search/search.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee/employee.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/admin/admin.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/api.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/admin.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/admin_post_import_cv_partner.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/admin_get_admins.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/admin_post_add_admin.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/admin_delete_admin.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/status",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_post_private_address.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_post_date_of_birth.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_post_confirm_busytime.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_delete_busytime.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_post_update_busytime.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_post_new_busytime.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_get_vcard.md",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/web.config",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/search.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/search_get.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/status.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/status_get.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_get_busytime.md",
-		"/Users/royveshovda/src/AtMiles/docs/api/employee_get_employee.md",
-		"/Users/royveshovda/src/AtMiles/docs/api_employee.md",
-		"/Users/royveshovda/src/AtMiles/docs/api_status.md",
-		"/Users/royveshovda/src/AtMiles/docs/api_search.md",
-		"/Users/royveshovda/src/AtMiles/docs/api_admin.md",
-		"/Users/royveshovda/src/AtMiles/docs/api.md",
-		"/Users/royveshovda/src/AtMiles/docs/Api",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/README.md",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Api/Controllers/RootController.cs",
-		"/Users/royveshovda/src/AtMiles/docs/README.md",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Api/Controllers/EmployeeController.cs",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Domain/Constants.cs",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/config.rb",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Domain.Test/CompareObjects.cs",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Domain/Aggregates/Company.cs",
-		"/Users/royveshovda/src/AtMiles/README.md",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/Git/Git.sublime-settings",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/views/index.jade",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Domain/Aggregates/Employee.cs",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/public/lib/modernizr/feature-detects/elem-progress-meter.js",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Domain/Event.cs",
-		"/Users/royveshovda/src/AtMiles/AtMiles.sublime-project",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Api/Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Domain/AggregateRoot.cs",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Api/Web.Release.config",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Api/Areas/HelpPage/Views/Web.config",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/public/lib/modernizr/.editorconfig",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/.idea/inspectionProfiles/profiles_settings.xml",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Api/Web.config",
-		"/Users/royveshovda/src/AtMiles/source/Web.sln",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/public/lib/modernizr/feature-detects/webgl-extensions.js",
-		"/Users/royveshovda/src/AtMiles/.idea/workspace.xml",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Domain/PrivateReflectionDynamicObject.cs",
-		"/Users/royveshovda/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/royveshovda/src/AtMiles/source/Backend/Infrastructure/config_example.yaml",
-		"/Users/royveshovda/src/AtMiles/source/Contact.Web/package.json",
-		"/Users/royveshovda/Downloads/test.txt",
-		"/Users/royveshovda/Documents/searchResult.json",
-		"/Users/royveshovda/src/gplus-quickstart-android/app/src/main/java/com/google/android/gms/plus/sample/quickstart/MainActivity.java",
-		"/Users/royveshovda/src/gplus-quickstart-android/README.md",
-		"/Users/royveshovda/src/garagecontroller/source/Windows/GarageController/ToggleDoorCommand.cs",
-		"/Users/royveshovda/src/garagecontroller/source/Python/.gitignore",
-		"/Users/royveshovda/src/garagecontroller/source/Windows/.gitignore",
-		"/Users/royveshovda/bin/dotfiles/vim/bundle/Omnisharp/README.md",
-		"/Users/royveshovda/src/Erlang-and-OTP-in-Action-Source/chapter_14/profile_ex.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/lgis.erl",
-		"/Users/royveshovda/src/rebar/README.md",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/lia.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/sseq.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/tran.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/prot.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/rna.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/convert.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/splc.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/mprt.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/iev.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/lcsm.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/prtm.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/basic.erl",
-		"/Users/royveshovda/src/Rosalind_Erlang/src/gc_tests.erl"
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P073.md"
 	],
 	"find":
 	{
@@ -644,6 +679,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -651,6 +687,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"primes_below",
 			"6",
 			"\\\"",
 			"buffer.AppendFormat(\"NOTE:{0}\\r\\n\", employee.OfficeName);",
@@ -685,8 +722,96 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "solve_server.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3674,
+								3674
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2451.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "answers.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "p071.erl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Erlang/Erlang.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
