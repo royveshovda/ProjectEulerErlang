@@ -142,7 +142,7 @@ get_problems(Type) ->
         %{65,unknown},
         %{66,unknown},
         {67,fast},
-        %{68,unknown},
+        {68,medium},
         {69,fast},
 
         % >= 70
