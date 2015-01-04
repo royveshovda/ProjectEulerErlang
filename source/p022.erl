@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (helper, [alphabetical_value/1]).
 
-%%Link: https://projecteuler.net/problem=22
-%% Correct: 871198282
-
 solve() ->
     Filename = "data/p022_names.txt",
     Names = open_file(Filename),

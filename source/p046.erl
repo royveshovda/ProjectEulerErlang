@@ -1,9 +1,6 @@
 -module (p046).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=46
-%% Correct: 5777
-
 solve() ->
     prime_server:start_link(10000),
     Odds = odds(3, prime_server:sieve(9999)),

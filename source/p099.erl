@@ -1,9 +1,7 @@
 -module (p099).
 -export ([solve/0]).
 
-%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%% Link: https://projecteuler.net/problem=99
-%% Correct: 709
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
 
 solve() ->
     {ok, B} = file:read_file("data/p099_base_exp.txt"),

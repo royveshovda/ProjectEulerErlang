@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (my_math, [pow/2]).
 
-%%Link: https://projecteuler.net/problem=97
-%% Correct: 8739992577
-
 solve() ->
 	(28433*iterate_last_digits(1,2,7830457,10)+1) rem pow(10,10).
 

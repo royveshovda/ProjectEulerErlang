@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (helper, [to_digits/1]).
 
-%%Link: https://projecteuler.net/problem=33
-%% Correct: 100
-
 solve() ->
     Candidates = get_candidates(),
     Results_raw = lists:filter(fun(X) -> check(X) end, Candidates),

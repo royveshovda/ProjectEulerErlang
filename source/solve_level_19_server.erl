@@ -1,5 +1,5 @@
--module (solver_level_19_server).
-%19:451-475
+-module (solve_level_19_server).
+
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
 -export([start_link/0, stop/0,
         solve/1, solve/2]).

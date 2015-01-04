@@ -1,9 +1,7 @@
 -module (p079).
 -export ([solve/0]).
 
-%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%% Link: https://projecteuler.net/problem=79
-%% Correct: 73162890
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
 
 solve() ->
     {ok, IoDevice} = file:open("data/p079_keylog.txt", [read]),

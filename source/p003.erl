@@ -1,9 +1,6 @@
 -module (p003).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=3
-%%Correct: 6857
-
 solve() ->
     max_factor(600851475143,2,2).
 

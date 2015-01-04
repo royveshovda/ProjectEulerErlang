@@ -1,9 +1,6 @@
 -module (p039).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=39
-%% Correct: 840
-
 solve() ->
 	Results = lists:map(fun(X) -> {expand(X),X} end, lists:seq(120,1000)),
 	{_,Result} = lists:max(Results),

@@ -1,9 +1,6 @@
 -module (p047).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=47
-%% Correct: 134043
-
 solve() ->
     prime_server:start_link(200000),
     Ans = find(2*3*5*7, 4, 0),

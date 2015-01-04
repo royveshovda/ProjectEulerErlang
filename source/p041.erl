@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (helper, [to_digits/1, assemble_number/1, permute/1]).
 
-%%Link: https://projecteuler.net/problem=41
-%% Correct: 7652413
-
 solve() ->
     find_below(9).
 

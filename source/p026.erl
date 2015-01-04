@@ -1,9 +1,6 @@
 -module (p026).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=26
-%% Correct: 983
-
 solve() ->
     Candidates = lists:seq(1,1000),
     Lengths = lists:map(fun(X) -> cycle_length(X) end, Candidates),

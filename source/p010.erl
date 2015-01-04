@@ -1,9 +1,6 @@
 -module (p010).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=10
-%% Correct: 142913828922
-
 solve() ->
     solution(2000000).
 

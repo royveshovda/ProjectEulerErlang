@@ -1,9 +1,6 @@
 -module (p019).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=19
-%% Solution: 171
-
 solve() ->
     check_date(1901,1,0).
 

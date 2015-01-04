@@ -1,9 +1,6 @@
 -module (p045).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=45
-%% Correct: 1533776805
-
 solve() ->
     Ts = t_list(286),
     Ps = p_list(166),

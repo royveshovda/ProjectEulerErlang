@@ -1,9 +1,6 @@
 -module (p044).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=44
-%% Correct: 5482660
-
 solve() ->
     [P|Ps] = get_pentagons(2400),
     find_diff(P, Ps, 1000000000).

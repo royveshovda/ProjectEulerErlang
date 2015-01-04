@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (helper, [to_digits/1]).
 
-%%Link: https://projecteuler.net/problem=52
-%% Correct: 142857
-
 solve() ->
     check(n_list(2)).
 

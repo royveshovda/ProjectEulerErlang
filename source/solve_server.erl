@@ -1,4 +1,4 @@
--module (solver_server).
+-module (solve_server).
 
 -export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
 -export([start_link/0, stop/0,
@@ -7,51 +7,51 @@
 -define(TIMEOUT, 5000000).
 
 start_link() ->
-    solver_level_1_server:start_link(),
-    solver_level_2_server:start_link(),
-    solver_level_3_server:start_link(),
-    solver_level_4_server:start_link(),
-    solver_level_5_server:start_link(),
-    solver_level_6_server:start_link(),
-    solver_level_7_server:start_link(),
-    solver_level_8_server:start_link(),
-    solver_level_9_server:start_link(),
-    solver_level_10_server:start_link(),
-    solver_level_11_server:start_link(),
-    solver_level_12_server:start_link(),
-    solver_level_13_server:start_link(),
-    solver_level_14_server:start_link(),
-    solver_level_15_server:start_link(),
-    solver_level_16_server:start_link(),
-    solver_level_17_server:start_link(),
-    solver_level_18_server:start_link(),
-    solver_level_19_server:start_link(),
-    solver_level_20_server:start_link(),
+    solve_level_1_server:start_link(),
+    solve_level_2_server:start_link(),
+    solve_level_3_server:start_link(),
+    solve_level_4_server:start_link(),
+    solve_level_5_server:start_link(),
+    solve_level_6_server:start_link(),
+    solve_level_7_server:start_link(),
+    solve_level_8_server:start_link(),
+    solve_level_9_server:start_link(),
+    solve_level_10_server:start_link(),
+    solve_level_11_server:start_link(),
+    solve_level_12_server:start_link(),
+    solve_level_13_server:start_link(),
+    solve_level_14_server:start_link(),
+    solve_level_15_server:start_link(),
+    solve_level_16_server:start_link(),
+    solve_level_17_server:start_link(),
+    solve_level_18_server:start_link(),
+    solve_level_19_server:start_link(),
+    solve_level_20_server:start_link(),
     gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
 
 init([]) -> {ok, {}}.
 
 stop() ->
-    solver_level_1_server:stop(),
-    solver_level_2_server:stop(),
-    solver_level_3_server:stop(),
-    solver_level_4_server:stop(),
-    solver_level_5_server:stop(),
-    solver_level_6_server:stop(),
-    solver_level_7_server:stop(),
-    solver_level_8_server:stop(),
-    solver_level_9_server:stop(),
-    solver_level_10_server:stop(),
-    solver_level_11_server:stop(),
-    solver_level_12_server:stop(),
-    solver_level_13_server:stop(),
-    solver_level_14_server:stop(),
-    solver_level_15_server:stop(),
-    solver_level_16_server:stop(),
-    solver_level_17_server:stop(),
-    solver_level_18_server:stop(),
-    solver_level_19_server:stop(),
-    solver_level_20_server:stop(),
+    solve_level_1_server:stop(),
+    solve_level_2_server:stop(),
+    solve_level_3_server:stop(),
+    solve_level_4_server:stop(),
+    solve_level_5_server:stop(),
+    solve_level_6_server:stop(),
+    solve_level_7_server:stop(),
+    solve_level_8_server:stop(),
+    solve_level_9_server:stop(),
+    solve_level_10_server:stop(),
+    solve_level_11_server:stop(),
+    solve_level_12_server:stop(),
+    solve_level_13_server:stop(),
+    solve_level_14_server:stop(),
+    solve_level_15_server:stop(),
+    solve_level_16_server:stop(),
+    solve_level_17_server:stop(),
+    solve_level_18_server:stop(),
+    solve_level_19_server:stop(),
+    solve_level_20_server:stop(),
     gen_server:cast(?MODULE, stop).
 
 solve(N) ->
@@ -178,26 +178,26 @@ print_results_with_benchmark([{N, {Result, Runtime}}|Rest]) ->
 handle_call({solve, N}, _From, State) ->
     Level = get_level(N),
     Result = case Level of
-                1 -> solver_level_1_server:solve(N, ?TIMEOUT);
-                2 -> solver_level_2_server:solve(N, ?TIMEOUT);
-                3 -> solver_level_3_server:solve(N, ?TIMEOUT);
-                4 -> solver_level_4_server:solve(N, ?TIMEOUT);
-                5 -> solver_level_5_server:solve(N, ?TIMEOUT);
-                6 -> solver_level_6_server:solve(N, ?TIMEOUT);
-                7 -> solver_level_7_server:solve(N, ?TIMEOUT);
-                8 -> solver_level_8_server:solve(N, ?TIMEOUT);
-                9 -> solver_level_9_server:solve(N, ?TIMEOUT);
-                10 -> solver_level_10_server:solve(N, ?TIMEOUT);
-                11 -> solver_level_11_server:solve(N, ?TIMEOUT);
-                12 -> solver_level_12_server:solve(N, ?TIMEOUT);
-                13 -> solver_level_13_server:solve(N, ?TIMEOUT);
-                14 -> solver_level_14_server:solve(N, ?TIMEOUT);
-                15 -> solver_level_15_server:solve(N, ?TIMEOUT);
-                16 -> solver_level_16_server:solve(N, ?TIMEOUT);
-                17 -> solver_level_17_server:solve(N, ?TIMEOUT);
-                18 -> solver_level_18_server:solve(N, ?TIMEOUT);
-                19 -> solver_level_19_server:solve(N, ?TIMEOUT);
-                20 -> solver_level_20_server:solve(N, ?TIMEOUT);
+                1 -> solve_level_1_server:solve(N, ?TIMEOUT);
+                2 -> solve_level_2_server:solve(N, ?TIMEOUT);
+                3 -> solve_level_3_server:solve(N, ?TIMEOUT);
+                4 -> solve_level_4_server:solve(N, ?TIMEOUT);
+                5 -> solve_level_5_server:solve(N, ?TIMEOUT);
+                6 -> solve_level_6_server:solve(N, ?TIMEOUT);
+                7 -> solve_level_7_server:solve(N, ?TIMEOUT);
+                8 -> solve_level_8_server:solve(N, ?TIMEOUT);
+                9 -> solve_level_9_server:solve(N, ?TIMEOUT);
+                10 -> solve_level_10_server:solve(N, ?TIMEOUT);
+                11 -> solve_level_11_server:solve(N, ?TIMEOUT);
+                12 -> solve_level_12_server:solve(N, ?TIMEOUT);
+                13 -> solve_level_13_server:solve(N, ?TIMEOUT);
+                14 -> solve_level_14_server:solve(N, ?TIMEOUT);
+                15 -> solve_level_15_server:solve(N, ?TIMEOUT);
+                16 -> solve_level_16_server:solve(N, ?TIMEOUT);
+                17 -> solve_level_17_server:solve(N, ?TIMEOUT);
+                18 -> solve_level_18_server:solve(N, ?TIMEOUT);
+                19 -> solve_level_19_server:solve(N, ?TIMEOUT);
+                20 -> solve_level_20_server:solve(N, ?TIMEOUT);
                 _ -> not_available
             end,
     {reply, Result, State}.

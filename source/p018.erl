@@ -1,9 +1,6 @@
 -module (p018).
 -export ([solve/0, evaluate/1]).
 
-%%Link: https://projecteuler.net/problem=18
-%% Correct: 1074
-
 solve() ->
     Filename = "data/p018_triangle.txt",
     evaluate(Filename).

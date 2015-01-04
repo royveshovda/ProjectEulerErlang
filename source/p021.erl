@@ -1,9 +1,6 @@
 -module (p021).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=21
-%% Correct: 31626
-
 solve() ->
     L = lists:seq(1,10000),
     F = fun(X) -> is_amicable(X) end,

@@ -1,9 +1,6 @@
 -module (p028).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=28
-%% Correct: 669171001
-
 solve() ->
     spiral(1001,0).
 

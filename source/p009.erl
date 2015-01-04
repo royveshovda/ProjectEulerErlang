@@ -1,14 +1,12 @@
 -module (p009).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=9
-%%Correct: 31875000 (200, 375, 425)
-
 solve() ->
     As = lists:seq(1,332),
     Bs = lists:seq(2,666),
     Cs = lists:seq(333,997),
-    [{A*B*C,A,B,C} || A<-As, B<-Bs, C<-Cs, check_order(A,B,C), check_pythagoras(A,B,C), check_sum(A,B,C)].
+    [{P, _A, _B, _C}] = [{A*B*C,A,B,C} || A<-As, B<-Bs, C<-Cs, check_order(A,B,C), check_pythagoras(A,B,C), check_sum(A,B,C)],
+    P.
 
 check_order(A, B, C) ->
     B1 = A < B,

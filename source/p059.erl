@@ -2,8 +2,6 @@
 -export ([solve/0]).
 
 %% Inspired from https://github.com/jamesaimonetti/ProjectEuler
-%%Link: https://projecteuler.net/problem=59
-%% Correct: 107359
 
 solve() ->
     {ok, Binary} = file:read_file("data/p059_cipher.txt"),

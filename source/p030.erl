@@ -3,9 +3,6 @@
 -import (helper, [to_digits/1]).
 -import (my_math, [pow/2]).
 
-%%Link: https://projecteuler.net/problem=30
-%% Correct: 443839
-
 solve() ->
     Candidates = lists:seq(2,500000),
     Powers = lists:filter(fun(X) -> check(X) end, Candidates),

@@ -1,9 +1,6 @@
 -module (p031).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=31
-%% Correct: 73682
-
 solve() ->
     count(200, coins()).
 

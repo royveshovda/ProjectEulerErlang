@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (helper, [to_digits/1, permute/1, assemble_number/1]).
 
-%%Link: https://projecteuler.net/problem=49
-%% Correct: 296962999629
-
 solve() ->
     prime_server:start_link(10000),
     Primes = prime_server:sieve(9999),

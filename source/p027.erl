@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (primes, [is_prime/1]).
 
-%%Link: https://projecteuler.net/problem=27
-%% Correct: -59231
-
 solve() ->
     As = lists:seq(-999,999),
     Bs = lists:seq(-999,999),

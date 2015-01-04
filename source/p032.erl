@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (helper, [to_digits/1]).
 
-%%Link: https://projecteuler.net/problem=32
-%% Correct: 45228
-
 solve() ->
     As = lists:seq(1, 100),
     Bs = lists:seq(10,4000),

@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (my_math, [pow/2]).
 
-%%Link: https://projecteuler.net/problem=48
-%% Correct: 9110846700
-
 solve() ->
     Ns = lists:seq(1,1000),
     Products = lists:map(fun(X) -> pow(X,X) end, Ns),

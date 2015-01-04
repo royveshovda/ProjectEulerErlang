@@ -1,9 +1,7 @@
 -module (p055).
 -export ([solve/0]).
 
-%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%%Link: https://projecteuler.net/problem=55
-%% Correct: 249
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
 
 -define(MAX_ITERATIONS, 50).
 

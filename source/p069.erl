@@ -1,9 +1,7 @@
 -module (p069).
 -export ([solve/0]).
 
-%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%%Link: https://projecteuler.net/problem=69
-%% Correct: 510510
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
 
 solve() ->
     lists:foldl(fun(P, Prod) when Prod * P > 1000000 -> Prod;

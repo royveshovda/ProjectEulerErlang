@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (my_math, [pow/2]).
 
-%%Link: https://projecteuler.net/problem=29
-%% Correct: 9183
-
 solve() ->
     As = lists:seq(2,100),
     Bs = lists:seq(2,100),

@@ -1,9 +1,6 @@
 -module (p016).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=16
-%% Solution: 1366
-
 solve() ->
     S = get_number(),
     D = get_digits(S),

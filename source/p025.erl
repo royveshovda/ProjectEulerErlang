@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (my_math, [pow/2]).
 
-%%Link: https://projecteuler.net/problem=25
-%% Correct: 4782
-
 solve()->
     fib(1,1,2,pow(10,999)).
     

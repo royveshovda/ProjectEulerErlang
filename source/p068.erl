@@ -3,8 +3,6 @@
 -import (helper, [permute/1]).
 
 %% Inspired from https://github.com/jzellner/eulererlang/blob/master/euler68.erl
-%% Link: https://projecteuler.net/problem=68
-%% Correct: 6531031914842725
 
 solve() ->
 	PotentialSolutions =

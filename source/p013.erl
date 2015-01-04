@@ -1,12 +1,12 @@
 -module (p013).
 -export ([solve/0]).
-
-%%Link: https://projecteuler.net/problem=13
-%%Correct: 5537376230... (5537376230390876637302048746832985971773659831892672)
+-import (helper, [to_digits/1, assemble_number/1]).
 
 solve() ->
     N = get_numbers(),
-    lists:sum(N).
+    Sum = lists:sum(N),
+    assemble_number(lists:sublist(to_digits(Sum), 10)).
+
 
 get_numbers() ->
     S = ["37107287533902102798797998220837590246510135740250",

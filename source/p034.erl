@@ -1,9 +1,6 @@
 -module (p034).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=34
-%% Correct: 40730
-
 solve() ->
     Max = 2540160,
     Candidates = lists:seq(3, Max),

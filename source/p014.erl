@@ -1,9 +1,6 @@
 -module (p014).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=14
-%%Solution: 837799
-
 solve() ->
     I = lists:seq(1,999999),
     Chains = [build_chain(X) || X <- I],

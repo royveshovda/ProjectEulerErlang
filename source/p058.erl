@@ -1,9 +1,7 @@
 -module (p058).
 -export ([solve/0]).
 
-%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%%Link: https://projecteuler.net/problem=58
-%% Correct: 26241
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
 
 solve() ->
     primes_in_corners(3, 5, 5).

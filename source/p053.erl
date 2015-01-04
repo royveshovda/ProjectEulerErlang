@@ -2,9 +2,6 @@
 -export ([solve/0, solve2/0]).
 -import (my_math, [factorial/1]).
 
-%%Link: https://projecteuler.net/problem=53
-%% Correct: 4075
-
 solve() ->
     Ns = lists:seq(1,100),
     Candidates = [{N,R} || N <- Ns, R <- Ns, N>=R],

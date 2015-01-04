@@ -1,12 +1,10 @@
 -module (p012).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=12
-%% Correct: 76576500
-
 solve() ->
     N=500,
-    next(2, [2], [1], N).
+    {P,_,_} = next(2, [2], [1], N),
+    P.
 
 next(N, [_|DivsT] = CurDivs, [PowersH|PowersT]=CurPowers, Max)->
     {[_|NextDivsT] = NextDivs, [NextPowersH|NextPowersT]= NextPowers} = factor_powers(N + 1),

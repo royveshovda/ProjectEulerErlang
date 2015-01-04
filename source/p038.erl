@@ -2,9 +2,6 @@
 -export ([solve/0]).
 -import (helper, [to_digits/1, assemble_number/1]).
 
-%%Link: https://projecteuler.net/problem=38
-%% Correct: 932718654
-
 solve() ->
 	Candidates = lists:map(fun(X) -> {X,expand(X)} end, lists:seq(192,9876)),
 	Results = lists:filter(fun({_N,Ds}) -> check(Ds) end, Candidates),

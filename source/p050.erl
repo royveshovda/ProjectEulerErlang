@@ -1,12 +1,9 @@
 -module (p050).
 -export ([solve/0]).
 
-
 -define(MAX_PRIME, 1000000).
 
-%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%%Link: https://projecteuler.net/problem=50
-%% Correct: 997651
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
 
 solve() ->
     Ps = primes:lazy_sieve(),

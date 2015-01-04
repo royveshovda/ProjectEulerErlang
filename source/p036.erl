@@ -1,9 +1,6 @@
 -module (p036).
 -export ([solve/0]).
 
-%%Link: https://projecteuler.net/problem=36
-%% Correct: 872187
-
 solve() ->
     Candidates = lists:seq(1,1000000),
     Pals = lists:filter(fun(X) -> is_2_base_palindrome(X) end, Candidates),

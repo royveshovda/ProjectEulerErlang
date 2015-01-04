@@ -1,9 +1,7 @@
 -module (p057).
 -export ([solve/0]).
 
-%% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%%Link: https://projecteuler.net/problem=57
-%% Correct: ??
+%% Inspired from https://github.com/jamesaimonetti/ProjectEuler
 
 solve() ->
     {_, _, C} = lists:foldl(fun(_, {N, D, C}) ->
