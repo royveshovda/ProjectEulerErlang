@@ -1,6 +1,6 @@
 -module (p041).
 -export ([solve/0]).
--import (calculator, [to_digits/1, assemble_number/1, permute/1]).
+-import (helper, [to_digits/1, assemble_number/1, permute/1]).
 
 %%Link: https://projecteuler.net/problem=41
 %% Correct: 7652413
@@ -12,7 +12,7 @@ find_below(Limit) ->
     prime_server:start_link(200000),
     L = lists:seq(1,Limit),
     Candidates = permute(L),
-    Numbers = lists:map(fun(X) -> calculator:assemble_number(X) end, Candidates),
+    Numbers = lists:map(fun(X) -> assemble_number(X) end, Candidates),
     Primes = prime_server:filter_primes(Numbers),
     Length = length(Primes),
     Ans = if

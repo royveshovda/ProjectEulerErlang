@@ -1,6 +1,6 @@
 -module (p053).
 -export ([solve/0, solve2/0]).
--import (calculator, [factorial/1]).
+-import (my_math, [factorial/1]).
 
 %%Link: https://projecteuler.net/problem=53
 %% Correct: 4075

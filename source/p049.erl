@@ -1,6 +1,6 @@
 -module (p049).
 -export ([solve/0]).
--import (calculator, [to_digits/1, permute/1, assemble_number/1]).
+-import (helper, [to_digits/1, permute/1, assemble_number/1]).
 
 %%Link: https://projecteuler.net/problem=49
 %% Correct: 296962999629

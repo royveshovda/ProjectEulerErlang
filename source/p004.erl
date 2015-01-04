@@ -5,5 +5,5 @@
 %%Correct: 906609
 
 solve() ->
-    Candidates = [X*Y || X <- lists:seq(100, 999), Y <- lists:seq(100, 999), calculator:is_palindrome(X*Y)],
+    Candidates = [X*Y || X <- lists:seq(100, 999), Y <- lists:seq(100, 999), my_math:is_palindrome(X*Y)],
     lists:max(Candidates).

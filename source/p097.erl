@@ -1,6 +1,6 @@
 -module (p097).
 -export ([solve/0]).
--import (calculator, [pow/2]).
+-import (my_math, [pow/2]).
 
 %%Link: https://projecteuler.net/problem=97
 %% Correct: 8739992577

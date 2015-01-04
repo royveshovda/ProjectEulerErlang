@@ -1,6 +1,6 @@
 -module (p022).
 -export ([solve/0]).
--import (calculator, [alphabetical_value/1]).
+-import (helper, [alphabetical_value/1]).
 
 %%Link: https://projecteuler.net/problem=22
 %% Correct: 871198282

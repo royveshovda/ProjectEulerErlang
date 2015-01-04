@@ -12,7 +12,7 @@ solve() ->
     is_lychrel(N) -> is_lychrel(rev_add(N), 0).
     is_lychrel(_N, ?MAX_ITERATIONS) -> true;
     is_lychrel(N, I) ->
-    case calculator:is_palindrome(N) of
+    case my_math:is_palindrome(N) of
         true -> false;
         false -> is_lychrel(rev_add(N), I+1)
     end.
