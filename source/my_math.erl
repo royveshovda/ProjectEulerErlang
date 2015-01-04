@@ -42,9 +42,10 @@ is_palindrome(L) ->
 
 %% Euler's Algorithm
 gcd(A, 0) -> A;
-gcd(A, B) when A < 0 orelse B < 0 -> gcd(abs(A), abs(B));
-gcd(A, B) when A < B -> gcd(B, A);
-gcd(A, B) -> gcd(B, A - B * (A div B)).
+%gcd(A, B) when A < 0 orelse B < 0 -> gcd(abs(A), abs(B));
+%gcd(A, B) when A < B -> gcd(B, A);
+%gcd(A, B) -> gcd(B, A - B * (A div B)).
+gcd(A, B) -> gcd(B, A rem B).
 
 %% gcd(A, B, C) = gcd( gcd(a,b), c)
 gcd([A, B | L]) ->

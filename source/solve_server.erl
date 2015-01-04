@@ -62,7 +62,7 @@ solve_with_benchmark(N) ->
 
 get_problems(Type) ->
     Problems = [
-        %1-9
+        % 1-9
         {1,fast},
         {2,fast},
         {3,fast},
@@ -73,7 +73,7 @@ get_problems(Type) ->
         {8,fast},
         {9,slow},
 
-        %10-19
+        % 10-19
         {10,medium},
         {11,fast},
         {12,fast},
@@ -85,7 +85,7 @@ get_problems(Type) ->
         {18,fast},
         {19,fast},
 
-        %20-29
+        % 20-29
         {20,fast},
         {21,medium},
         {22,fast},
@@ -97,7 +97,7 @@ get_problems(Type) ->
         {28,fast},
         {29,fast},
 
-        %30-39
+        % 30-39
         {30,fast},
         {31,fast},
         {32,fast},
@@ -109,7 +109,7 @@ get_problems(Type) ->
         {38,fast},
         {39,slow},
 
-        %40-49
+        % 40-49
         {40,fast},
         {41,medium},
         {42,fast},
@@ -121,7 +121,7 @@ get_problems(Type) ->
         {48,fast},
         {49,fast},
 
-        %50-59
+        % 50-59
         {50,medium},
         %{51,unknown},
         {52,fast},
@@ -133,7 +133,7 @@ get_problems(Type) ->
         {58,fast},
         {59,medium},
 
-        %60-69
+        % 60-69
         %{60,unknown},
         %{61,unknown},
         %{62,unknown},
@@ -145,8 +145,19 @@ get_problems(Type) ->
         {68,medium},
         {69,fast},
 
-        % >= 70
+        % 70-79
+        %{70,unknown},
+        %{71,unknown},
+        %{72,unknown},
+        {73,medium},
+        %{74,unknown},
+        %{75,unknown},
+        %{76,unknown},
+        %{77,unknown},
+        %{78,unknown},
         {79,fast},
+
+        % >= 80
         {92,medium},
         {97,medium},
         {99,fast}
