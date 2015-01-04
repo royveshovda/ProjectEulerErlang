@@ -2,7 +2,7 @@
 -export ([solve/0]).
 
 %% Borrowed from https://github.com/jamesaimonetti/ProjectEuler
-%%Link: https://projecteuler.net/problem=99
+%% Link: https://projecteuler.net/problem=99
 %% Correct: 709
 
 solve() ->

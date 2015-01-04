@@ -146,6 +146,7 @@ get_problems(Type) ->
         {69,fast},
 
         % >= 70
+        {79,fast},
         {97,medium},
         {99,fast}
     ],
