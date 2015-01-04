@@ -2,6 +2,8 @@
 -export ([solve/0]).
 -import (my_math, [gcd/2]).
 
+%% NOT WORKING
+
 solve() ->
 	L = genlist(),
 	erlang:display("Stage 2"),
