@@ -14,7 +14,10 @@
             floor/1,
             ceiling/1,
             is_pandigital/1,
-            proper_divisors/1
+            proper_divisors/1,
+            prime_factors/1,
+            prime_factors_mult/1,
+            totient_phi_improved/1
         ]).
 
 -define(GOLD_RATIO, (1 + math:sqrt(5)) / 2).
@@ -108,6 +111,10 @@ ceiling(X) ->
         _ -> T
     end.
 
+is_pandigital(N) when length(N) =:= 9 ->
+    lists:all(fun(D) -> lists:member(D, N) end, lists:seq($1, $9));
+is_pandigital(_) -> false.
+
 % Euler's phi-function
 totient(1) -> 1;
 totient(N) ->
@@ -119,6 +126,107 @@ totient(N) ->
             N-1
     end.
 
-is_pandigital(N) when length(N) =:= 9 ->
-    lists:all(fun(D) -> lists:member(D, N) end, lists:seq($1, $9));
-is_pandigital(_) -> false.
+%% ==============================================================================
+%% @doc
+%% P37 (**) Calculate Euler's totient function phi(m) (improved).
+%%
+%% See problem P34 for the definition of Euler's totient function. If the list
+%% of the prime factors of a number M is known in the form of problem P36 then
+%% the function phi(m) can be efficiently calculated as follows: Let ((p1 m1)
+%% (p2 m2) (p3 m3) ..) be the list of prime factors (and their multiplicities)
+%% of a given number M. Then phi(m) can be calculated with the following formula:
+%%
+%% phi(m) = (p1-1) * p1 ** (m1-1) * (p2-1) * p2 ** (m2-1) * (p3-1) * p3 ** (m3-1) * ...
+%%
+%% Note that a ** b stands for the b'th power of a.
+%% @end
+%% ==============================================================================
+-spec totient_phi_improved(N) -> M when
+    N :: pos_integer(),
+    M :: pos_integer().
+totient_phi_improved(N) when is_integer(N),
+    N > 0 ->
+    Mapper = fun([H|T]) -> (H-1) * math:pow(H,hd(T)-1) end,
+    trunc(lists:foldl(fun(X, Prod) -> X * Prod end,
+    1,
+    lists:map(Mapper, prime_factors_mult(N)))).
+
+%% =========================================================================
+%% @doc
+%% P36 (**) Determine the prime factors of a given positive integer (2).
+%%
+%% Construct a list containing the prime factors and their multiplicity.
+%% @end
+%%
+%% Example:
+%% > (prime-factors-mult 315)
+%% > ((3 2) (5 1) (7 1))
+%%
+%% Hint: The problem is similar to problem P13.
+%% =========================================================================
+%%
+%% Actually, the problem is more similar to Problem P11, but in P11 the results
+%% are returned in the opposite order from which we are seeking. In other words,
+%% we could implement something like:
+%%
+%% prime_factors_mult(N) -> encode( prime_factors(N) ).
+%%
+%% But the result would be something like:
+%%
+%% > prime_factors_mult(315)
+%% > [[2,3], [1,5], [1,7]]
+%%
+%% In other words, each sublist would be in the reverse order from what we are
+%% seeking. Instead, let's just define our own anonymous fun, similar to that in
+%% P11, but which returns the elements in the proper order:
+%%
+-spec prime_factors_mult(N) -> List when
+    N :: pos_integer(),
+    List :: [term | List].
+
+prime_factors_mult(N) when is_integer(N), N > 1 ->
+    %%
+    %% The "Encode" fun defined here is essentially P11,
+    %% just tweaked to fit our requirements here:
+    %%
+    Encode = fun([H|T], [], Acc, Func) -> Func(T, [H,1], Acc, Func);
+                ([H|T], [H,M], Acc, Func) -> Func(T, [H,M+1], Acc, Func);
+                ([H|T], A, Acc, Func) -> Func(T, [H,1], [A] ++ Acc, Func);
+                ([], A, Acc, _Func) -> lists:reverse([A] ++ Acc)
+            end,
+Encode( prime_factors(N), [], [], Encode ).
+
+%% ========================================================================
+%% @doc
+%% P35 (**) Determine the prime factors of a given positive integer.
+%%
+%% Construct a flat list containing the prime factors in ascending order.
+%% @end
+%%
+%% Example:
+%% > (prime-factors 315)
+%% > (3 3 5 7)
+%% ========================================================================
+%%
+%% The following is a simple, "naive" algorithm for finding the prime factors
+%% of (comparatively) small integers. For larger integers, an algorithm like
+%% the quadratic sieve, invented by Carl Pomerance in 1981, would be more
+%% effective. QS is a faster, effective procedure for calculating prime factors
+%% for numbers up to (roughly) 100 digits in length.
+%%
+-spec prime_factors(N) -> [N] when
+    N :: pos_integer().
+
+prime_factors(N) when is_integer(N), N > 1 ->
+    %% seperate 2 out as a special factor, so we can increment more efficiently
+    PrimeFactorsIter = fun(_, M, Acc, _Func) when (M =:= 0) or (M =:= 1) -> Acc;
+                    (2, M, Acc, Func) when M rem 2 =:= 0 ->
+                        Func(2, M div 2, Acc ++ [2], Func);
+                    (2, M, Acc, Func) when M rem 2 =/= 0 ->
+                        Func(3, M, Acc, Func);
+                    (D, M, Acc, Func) when M rem D =:= 0 ->
+                        Func(D, M div D, Acc ++ [D], Func);
+                    (D, M, Acc, Func) when M rem D =/= 0 ->
+                        Func(D+2, M, Acc, Func)
+        end,
+    PrimeFactorsIter(2, N, [], PrimeFactorsIter).
