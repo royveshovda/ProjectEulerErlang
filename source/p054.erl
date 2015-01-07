@@ -1,22 +1,27 @@
 -module (p054).
 -export ([solve/0]).
 
-%% Link: https://projecteuler.net/problem=54
-%% Correct: ??
-
 solve() ->
-    
-    L1 = "5H 5C 6S 7S KD 2C 3S 8S 8D TD",
-    L2 = "5D 8C 9S JS AC 2C 5C 7D 8S QH",
-    L3 = "2D 9C AS AH AC 3D 6D 7D TD QD",
-    L4 = "4D 6S 9H QH QC 3D 6D 7H QD QS",
-    L5 = "2H 2D 4C 4D 4S 3C 3D 3S 9S 9D",
-    Lines = [L1,L2,L3,L4,L5],
+    Filename = "data/p054_poker.txt",
+    Lines = into_list(Filename),
+    %Lines.
     Hands = lists:map(fun(L) -> parse_line(L) end, Lines),
-    lists:map(fun({H1,H2}) -> is_hand1_winner(H1,H2) end, Hands).
+    Winners = lists:map(fun({H1,H2}) -> get_winner(H1,H2) end, Hands),
+    length(lists:filter(fun(W) -> W == hand1 end, Winners)).
+    
+into_list( File ) ->
+        {ok, IO} = file:open( File, [read] ),
+        into_list( io:get_line(IO, ''), IO, [] ).
+ 
+ 
+into_list( eof, _IO, Acc ) -> lists:reverse( Acc );
+into_list( {error, _Error}, _IO, Acc ) -> lists:reverse( Acc );
+into_list( Line, IO, Acc ) -> into_list( io:get_line(IO, ''), IO, [Line | Acc] ).
+    
 
 parse_line(Line) ->
-    Cards = string:tokens(Line, " "),
+    Raw = string:strip(Line,right,$\n),
+    Cards = string:tokens(Raw, " "),
     All = lists:map(fun(X) -> parse_card(X) end, Cards),
     H1 = lists:sublist(All,5),
     H2 = lists:sublist(All, 6,5),
@@ -50,27 +55,27 @@ parse_suit(S) ->
         $H -> hearts
     end.    
 
-is_hand1_winner(H1, H2) ->
+get_winner(H1, H2) ->
     R1 = rank_hand(lists:reverse(lists:sort(H1))),
     R2 = rank_hand(lists:reverse(lists:sort(H2))),
     %io:format("H1: ~p~n", [R1]),
     %io:format("H2: ~p~n", [R2]),
-    is_hand1_winner_sorted(R1,R2).
+    get_winner_sorted(R1,R2).
 
-is_hand1_winner_sorted({R1,_,_}, {R2,_,_}) when R1 > R2 -> {true,1};
-is_hand1_winner_sorted({R1,_,_}, {R2,_,_}) when R1 < R2 -> {false,2};
-is_hand1_winner_sorted({R1,RC1,NRC1}, {R2,RC2,NRC2}) when R1 == R2 ->
-    is_hand1_winner_same_rank({RC1, NRC1}, {RC2, NRC2}).
+get_winner_sorted({R1,_,_}, {R2,_,_}) when R1 > R2 -> hand1;
+get_winner_sorted({R1,_,_}, {R2,_,_}) when R1 < R2 -> hand2;
+get_winner_sorted({R1,RC1,NRC1}, {R2,RC2,NRC2}) when R1 == R2 ->
+    get_winner_same_rank({RC1, NRC1}, {RC2, NRC2}).
 
-is_hand1_winner_same_rank({[],[]}, {[],[]}) -> {false,3}; %% Draw
-is_hand1_winner_same_rank({[{V1,_}|_], _} , {[{V2,_}|_], _}) when V1 > V2 -> {true,4};
-is_hand1_winner_same_rank({[{V1,_}|_], _} , {[{V2,_}|_], _}) when V1 < V2 -> {false,5};
-is_hand1_winner_same_rank({[{V1,_}|RCs1], NRC1} , {[{V2,_}|RCs2], NRC2}) when V1 == V2 ->
-    is_hand1_winner_same_rank({RCs1, NRC1} , {RCs2, NRC2});
-is_hand1_winner_same_rank({[], [{V1,_}|_]} , {[], [{V2,_}|_]}) when V1 > V2 -> {true,6};
-is_hand1_winner_same_rank({[], [{V1,_}|_]} , {[], [{V2,_}|_]}) when V1 < V2 -> {false,7};
-is_hand1_winner_same_rank({[], [{V1,_}|NRCs1]} , {[], [{V2,_}|NCRs2]}) when V1 == V2 ->
-    is_hand1_winner_same_rank({[], NRCs1} , {[], NCRs2}).
+get_winner_same_rank({[],[]}, {[],[]}) -> draw; %% Draw
+get_winner_same_rank({[{V1,_}|_], _} , {[{V2,_}|_], _}) when V1 > V2 -> hand1;
+get_winner_same_rank({[{V1,_}|_], _} , {[{V2,_}|_], _}) when V1 < V2 -> hand2;
+get_winner_same_rank({[{V1,_}|RCs1], NRC1} , {[{V2,_}|RCs2], NRC2}) when V1 == V2 ->
+    get_winner_same_rank({RCs1, NRC1} , {RCs2, NRC2});
+get_winner_same_rank({[], [{V1,_}|_]} , {[], [{V2,_}|_]}) when V1 > V2 -> hand1;
+get_winner_same_rank({[], [{V1,_}|_]} , {[], [{V2,_}|_]}) when V1 < V2 -> hand2;
+get_winner_same_rank({[], [{V1,_}|NRCs1]} , {[], [{V2,_}|NCRs2]}) when V1 == V2 ->
+    get_winner_same_rank({[], NRCs1} , {[], NCRs2}).
 
 % Royal Flush: Rank = 10
 rank_hand([{_,S1} = C1, {_,S2}= C2, {_,S3} = C3, {_,S4} = C4, {_,S5} = C5])
