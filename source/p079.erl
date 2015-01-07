@@ -6,6 +6,7 @@
 solve() ->
     {ok, IoDevice} = file:open("data/p079_keylog.txt", [read]),
     String = process(IoDevice, []),
+    file:close(Device),
     list_to_integer(String).
 
 process(IoDevice, L) ->
@@ -13,7 +14,7 @@ process(IoDevice, L) ->
         {ok, [N1, N2, N3 | _Rest]} ->
             process(IoDevice, update([N1, N2, N3], L));
         eof -> L;
-            {error, R} -> io:format("Error reading from file: ~w~n", [R]),
+        {error, R} -> io:format("Error reading from file: ~w~n", [R]),
         undefined
     end.
 
