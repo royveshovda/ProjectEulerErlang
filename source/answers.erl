@@ -61,7 +61,7 @@ get_all() ->
 		{problem, 49, solution, 296962999629},
 
 		{problem, 50, solution, 997651},
-		{problem, 51, solution, not_available},
+		{problem, 51, solution, 121313},
 		{problem, 52, solution, 142857},
 		{problem, 53, solution, 4075},
 		{problem, 54, solution, 376},

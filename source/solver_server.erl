@@ -123,7 +123,7 @@ get_problems(Type) ->
 
         %50-59
         {50,medium},
-        %{51,unknown},
+        {51,medium},
         {52,fast},
         {53,fast},
         {54,fast},
@@ -145,13 +145,42 @@ get_problems(Type) ->
         %{68,unknown},
         {69,fast},
 
-        % >= 70
+        %70-79
+        %{70,unknown},
         {71,fast},
         {72,slow},
         {73, medium},
+        %{74,unknown},
+        %{75,unknown},
+        %{76,unknown},
+        %{77,unknown},
+        %{78,unknown},
         {79,fast},
+
+        %80-89
+        %{80,unknown},
+        %{81,unknown},
+        %{82,unknown},
+        %{83,unknown},
+        %{84,unknown},
+        %{85,unknown},
+        %{86,unknown},
+        %{87,unknown},
+        %{88,unknown},
+        %{89,unknown},
+
+        %90-99
+        %{90,unknown},
+        %{91,unknown},
+        %{92,unknown},
+        %{93,unknown},
+        %{94,unknown},
+        %{95,unknown},
+        %{96,unknown},
         {97,medium},
+        %{98,unknown},
         {99,fast}
+
     ],
     case Type of
         all -> Problems;
