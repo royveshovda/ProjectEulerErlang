@@ -4,46 +4,44 @@
 
 solve() ->
     Filename = "p060_test.data",
-    Pairs = get_pairs(Filename),
+    {Pairs, Candidate_sets} = get_data(Filename),
+    %Valid_sets = lists:filter(fun(S) -> verify_set(S, Pairs) end, Candidate_sets),
+    %Sets_with_sum = lists:map(fun(L) -> {lists:sum(L), L} end, Valid_sets),
+    %{S,_} = lists:min(Sets_with_sum),
+    %S.
+    length(Candidate_sets).
+
+verify_set([A,B,C,D,E], Pairs) ->
+    Checks = [{A,B},{A,C},{A,D},{A,E},{B,C},{B,D},{B,E},{C,D},{C,E},{D,E}],
+    Results = lists:map(fun(S) -> lists:member(S,Pairs) end, Checks),
+    lists:foldl(fun(R, Acc) -> (Acc and R) end, true, Results).
+
+get_data(Filename) ->
+    case file:read_file_info(Filename) of
+        {ok,_} ->
+            {ok, Binary} = file:read_file(Filename),
+            binary_to_term(Binary);
+        _ ->
+            Pairs = generate_pairs(),
+            Candidates = generate_set_candidates(Pairs),
+            Data = {Pairs, Candidates},
+            Binary = term_to_binary(Data),
+            ok = file:write_file(Filename, Binary),
+            Data
+    end.
+
+generate_set_candidates(Pairs) ->
     Ns = get_all_numbers(Pairs),
-    length(Ns).
-    
+    Set_candidates = permute_5(Ns),
+    Internal_sorted = lists:map(fun(L) -> lists:sort(L) end, Set_candidates),
+    lists:usort(Internal_sorted).
+  
+permute_5(L) ->
+    [[A,B,C,D,E] || A <- L, B <- L--[A], C <- L--[A]--[B], D <- L--[A]--[B]--[C], E <- L--[A]--[B]--[C]--[D]].
 
-    %7
-    %1237
-    %C1 = {7,1237},
-
-    %2341
-    %C2 = {7, 2341},
-    %C3 = {1237, 2341},
-
-    %12409
-    %C4 = {7, 12409},
-    %C5 = {1237, 12409},
-    %C6 = {2341, 12409}
-
-    %18433
-    %C7 = {7, 18433},
-    %C8 = {1237, 18433},
-    %C9 = {2341, 18433},
-    %C10 = {12409, 18433}
 get_all_numbers(Pairs) ->
     Ns = lists:foldl(fun({A,B}, Acc) -> [A,B|Acc] end, [], Pairs),
     lists:usort(Ns).
-
-get_pairs(Filename) ->
-    case filelib:is_file(Filename) of
-        true ->
-            {ok, Data} = file:read_file(Filename),
-            binary_to_term(Data);
-        false ->
-            Pairs = generate_pairs(),
-            Data = term_to_binary(Pairs),
-            ok = file:write_file(Filename, Data),
-            Pairs
-    end.
-
-
 
 generate_pairs() ->
     prime_server:start_link(20000),
