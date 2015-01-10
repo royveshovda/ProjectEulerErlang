@@ -32,12 +32,20 @@ get_data(Filename) ->
 
 generate_set_candidates(Pairs) ->
     Ns = get_all_numbers(Pairs),
-    Set_candidates = permute_5(Ns),
+    %Set_candidates = permute_5(Ns),
+    Set_candidates = comb(5,Ns),
     Internal_sorted = lists:map(fun(L) -> lists:sort(L) end, Set_candidates),
     lists:usort(Internal_sorted).
   
 permute_5(L) ->
     [[A,B,C,D,E] || A <- L, B <- L--[A], C <- L--[A]--[B], D <- L--[A]--[B]--[C], E <- L--[A]--[B]--[C]--[D]].
+
+comb(0,_) ->
+    [[]];
+comb(_,[]) ->
+    [];
+comb(N,[H|T]) ->
+    [[H|L] || L <- comb(N-1,T)]++comb(N,T).
 
 get_all_numbers(Pairs) ->
     Ns = lists:foldl(fun({A,B}, Acc) -> [A,B|Acc] end, [], Pairs),
