@@ -3,60 +3,31 @@
 -import (helper, [to_digits/1, assemble_number/1]).
 
 solve() ->
-    Filename_pairs = "p060_pairs.data",
-    Filename_sets = "p060_sets.data",
-    Map = get_sets_as_map(Filename_pairs, Filename_sets),
-    %Ns = maps:keys(Map),
+    Map = get_sets_as_map(),
+    Ns = maps:keys(Map),
+    Cs = lists:map(fun(N) -> check(Map, [N]) end, Ns),
+    Results = lists:filter(fun(L) -> length(L) > 0 end, Cs),
+    Values = lists:map(fun(L) -> lists:flatten(L) end, Results),
+    lists:min(lists:map(fun(L) -> lists:sum(L) end, Values)).
 
-    S3 = maps:get(3,Map),
-    S7 = maps:get(7,Map),
-    S673 = maps:get(673,Map),
-    Si = sets:intersection([S3,S7,S673]),
-    sets:to_list(Si).
-
-    %TODO: Loop through all numbers, and try tu build intersections of size 5 or more
-
-    %Map -> {N,Set}
-
-verify_set([A,B,C,D,E], Pairs) ->
-    Checks = [{A,B},{A,C},{A,D},{A,E},{B,C},{B,D},{B,E},{C,D},{C,E},{D,E}],
-    Results = lists:map(fun(S) -> lists:member(S,Pairs) end, Checks),
-    R = lists:foldl(fun(R, Acc) -> (Acc and R) end, true, Results),
-    if
-    	R == true ->
-    		io:format("~p, ~p, ~p, ~p, ~p",[A,B,C,D,E]);
-    	true -> ok
-    end,
-    R.
-
-get_sets_as_map(Filename_pairs, Filename_sets) ->
-    case file:read_file_info(Filename_sets) of
-        {ok,_} ->
-            {ok, Binary} = file:read_file(Filename_sets),
-            {_Pairs, Candidates} = binary_to_term(Binary),
-            maps:from_list(Candidates);
+check(_, Acc) when length(Acc) >= 5 -> Acc;
+check(Map, Acc) ->
+    Sets = lists:map(fun(N) -> maps:get(N,Map) end, Acc),
+    Potensials = sets:intersection(Sets),
+    case sets:size(Potensials) of
+        0 -> [];
         _ ->
-
-            Pairs = get_pairs(Filename_pairs),
-            Candidates = generate_sets(Pairs),
-            Data = {Pairs, Candidates},
-            Binary = term_to_binary(Data),
-            ok = file:write_file(Filename_sets, Binary),
-            maps:from_list(Candidates)
+            Cs = sets:to_list(Potensials),
+            New_candidates = lists:map(fun(N) -> lists:sort([N|Acc]) end, Cs),
+            Lists = lists:map(fun(L) -> check(Map, L) end, New_candidates),
+            lists:usort(lists:filter(fun(L) -> length(L) > 0 end, Lists))
     end.
 
-get_pairs(Filename) ->
-	case file:read_file_info(Filename) of
-        {ok,_} ->
-            {ok, Binary} = file:read_file(Filename),
-            binary_to_term(Binary);
-        _ ->
-            Pairs = generate_pairs(),
-            Binary = term_to_binary(Pairs),
-            ok = file:write_file(Filename, Binary),
-            Pairs
-   	end.
-
+get_sets_as_map() ->
+    Pairs = generate_pairs(),
+    Candidates = generate_sets(Pairs),
+    maps:from_list(Candidates).
+    
 generate_sets(Pairs) ->
     Ns = get_all_numbers(Pairs),
     lists:map(fun(N) -> {N, get_set(N, Pairs)} end, Ns).
@@ -66,7 +37,6 @@ get_set(N,Pairs) ->
 
 get_set(_N, [], Acc) ->
     sets:from_list(lists:sort(Acc));
-    %lists:sort(Acc);
 get_set(N, [{N,B}|Rest], Acc) ->
     get_set(N, Rest, [B|Acc]);
 get_set(N, [{A,N}|Rest], Acc) ->
