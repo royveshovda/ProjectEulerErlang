@@ -123,9 +123,9 @@ get_problems(Type) ->
 
         % 50-59
         {50,medium},
-        %{51,unknown},
+        {51,fast},
         {52,fast},
-        %{53,unknown},
+        {53,fast},
         {54,fast},
         {55,fast},
         {56,fast},
