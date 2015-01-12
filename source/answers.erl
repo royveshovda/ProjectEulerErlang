@@ -102,7 +102,7 @@ get_all() ->
 		{problem, 86, solution, not_available},
 		{problem, 87, solution, not_available},
 		{problem, 88, solution, not_available},
-		{problem, 89, solution, not_available},
+		{problem, 89, solution, 743},
 		
 		{problem, 90, solution, not_available},
 		{problem, 91, solution, not_available},
