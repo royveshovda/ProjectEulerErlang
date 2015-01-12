@@ -161,7 +161,8 @@ get_problems(Type) ->
         {89,fast},
         {92,medium},
         {97,medium},
-        {99,fast}
+        {99,fast},
+        {119,fast}
     ],
     case Type of
         all -> Problems;

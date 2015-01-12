@@ -114,5 +114,26 @@ get_all() ->
 		{problem, 97, solution, 8739992577},
 		{problem, 98, solution, not_available},
 		{problem, 99, solution, 709},
-		{problem, 100, solution, not_available}
+
+		{problem, 100, solution, not_available},
+		{problem, 101, solution, not_available},
+		{problem, 102, solution, not_available},
+		{problem, 103, solution, not_available},
+		{problem, 104, solution, not_available},
+		{problem, 105, solution, not_available},
+		{problem, 106, solution, not_available},
+		{problem, 107, solution, not_available},
+		{problem, 108, solution, not_available},
+		{problem, 109, solution, not_available},
+
+		{problem, 110, solution, not_available},
+		{problem, 111, solution, not_available},
+		{problem, 112, solution, not_available},
+		{problem, 113, solution, not_available},
+		{problem, 114, solution, not_available},
+		{problem, 115, solution, not_available},
+		{problem, 116, solution, not_available},
+		{problem, 117, solution, not_available},
+		{problem, 118, solution, not_available},
+		{problem, 119, solution, 248155780267521}
 	].
