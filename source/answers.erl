@@ -76,7 +76,7 @@ get_all() ->
 		{problem, 62, solution, 127035954683},
 		{problem, 63, solution, 49},
 		{problem, 64, solution, not_available},
-		{problem, 65, solution, not_available},
+		{problem, 65, solution, 272},
 		{problem, 66, solution, not_available},
 		{problem, 67, solution, 7273},
 		{problem, 68, solution, 6531031914842725},
