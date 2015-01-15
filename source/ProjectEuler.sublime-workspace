@@ -4,280 +4,24 @@
 		"selected_items":
 		[
 			[
-				"Can",
-				"Candidate_sets"
+				"File",
+				"Filename_pairs"
 			],
 			[
 				"get",
-				"get_candidates"
-			],
-			[
-				"File",
-				"Filename"
-			],
-			[
-				"is",
-				"is_hand1_winner"
-			],
-			[
-				"parse",
-				"parse_line"
-			],
-			[
-				"is_",
-				"is_hand1_winner_sorted"
-			],
-			[
-				"is_han",
-				"is_hand1_winner_same_rank"
-			],
-			[
-				"n",
-				"Not_ranked_cards"
-			],
-			[
-				"Ra",
-				"Ranked_cards"
-			],
-			[
-				"Par",
-				"parse_card"
-			],
-			[
-				"pars",
-				"parse_suit"
-			],
-			[
-				"par",
-				"parse_value"
-			],
-			[
-				"d",
-				"diamonds"
-			],
-			[
-				"is_str",
-				"is_straight"
-			],
-			[
-				"W",
-				"With_value"
-			],
-			[
-				"ca",
-				"calculate_nominator"
-			],
-			[
-				"so",
-				"solve_all"
-			],
-			[
-				"T",
-				"TIMEOUT"
+				"get_answer"
 			],
 			[
 				"check",
-				"check_N"
-			],
-			[
-				"che",
-				"check_N"
-			],
-			[
-				"solv",
-				"solve"
-			],
-			[
-				"solve",
-				"solver_level_1_server"
-			],
-			[
-				"chec",
-				"check_right"
-			],
-			[
-				"per",
-				"permute_3"
-			],
-			[
-				"Test",
-				"Test_Permutations"
-			],
-			[
-				"Tes",
-				"Test_Permutations"
-			],
-			[
-				"Group",
-				"Groups"
-			],
-			[
-				"sor",
-				"sorted_digits"
-			],
-			[
-				"Ca",
-				"Candidates"
-			],
-			[
-				"in",
-				"int_to_bits"
-			],
-			[
-				"a",
-				"all_rotation_prime"
-			],
-			[
-				"pri",
-				"prime_below"
-			],
-			[
-				"lis",
-				"lists"
-			],
-			[
-				"S",
-				"sequence_of_primes"
+				"check2"
 			],
 			[
 				"D",
-				"Digit"
+				"D2_4"
 			],
 			[
-				"Di",
-				"Digits"
-			],
-			[
-				"Le",
-				"Levels"
-			],
-			[
-				"read",
-				"read_lines"
-			],
-			[
-				"re",
-				"read_line"
-			],
-			[
-				"rea",
-				"read_lines"
-			],
-			[
-				"oe",
-				"open_file"
-			],
-			[
-				"Nex",
-				"Next_Current"
-			],
-			[
-				"conver",
-				"convert_last_two_digits"
-			],
-			[
-				"Ma",
-				"Max_Y"
-			],
-			[
-				"ex",
-				"expand"
-			],
-			[
-				"Max",
-				"Max_Y"
-			],
-			[
-				"Inde",
-				"Indexed"
-			],
-			[
-				"Sor",
-				"Sorted_list"
-			],
-			[
-				"ope",
-				"open_file"
-			],
-			[
-				"get_",
-				"get_number"
-			],
-			[
-				"_",
-				"_Max_length"
-			],
-			[
-				"Cha",
-				"Chains"
-			],
-			[
-				"L",
-				"_Length2"
-			],
-			[
-				"Fac",
-				"Factors"
-			],
-			[
-				"Fa",
-				"Factors"
-			],
-			[
-				"List",
-				"List_of_digit_lists"
-			],
-			[
-				"New",
-				"New_sum"
-			],
-			[
-				"fib",
-				"fibonachi_below"
-			],
-			[
-				"Li",
-				"List"
-			],
-			[
-				"di",
-				"dividable_not_both_by_10"
-			],
-			[
-				"sto",
-				"stopWatch"
-			],
-			[
-				"inte",
-				"intersection"
-			],
-			[
-				"E",
-				"ElapsedMilliseconds"
-			],
-			[
-				"list",
-				"list_of_primes"
-			],
-			[
-				"can",
-				"candidateToken"
-			],
-			[
-				"add",
-				"add1ToEach"
-			],
-			[
-				"To",
-				"TotalDecent"
-			],
-			[
-				"TotalC",
-				"TotalClimb"
-			],
-			[
-				"GetR",
-				"GetRequests"
+				"t",
+				"to_digits"
 			],
 			[
 				"DateO",
@@ -328,6 +72,10 @@
 				"S1_Raw"
 			],
 			[
+				"E",
+				"ExpectedProtein"
+			],
+			[
 				"Intr",
 				"Intron"
 			],
@@ -344,8 +92,16 @@
 				"remove_sub_strings2"
 			],
 			[
+				"re",
+				"remove_sub_strings"
+			],
+			[
 				"Intron",
 				"Introns"
+			],
+			[
+				"list",
+				"list_of_strings_to_dna"
 			],
 			[
 				"Cou",
@@ -380,6 +136,10 @@
 				"List_of_matches"
 			],
 			[
+				"List",
+				"List_of_matches"
+			],
+			[
 				"Result",
 				"Results"
 			],
@@ -404,12 +164,24 @@
 				"download_uniprot_fasta"
 			],
 			[
+				"Ma",
+				"Matching_protein_list"
+			],
+			[
 				"get_n",
 				"get_n_glycosylation_motifs"
 			],
 			[
+				"S",
+				"S_or_T"
+			],
+			[
 				"protein",
 				"protein_t"
+			],
+			[
+				"New",
+				"New_Graph1"
 			],
 			[
 				"dna",
@@ -430,6 +202,14 @@
 			[
 				"ap",
 				"apples"
+			],
+			[
+				"a",
+				"apples"
+			],
+			[
+				"n",
+				"next"
 			],
 			[
 				"DNA",
@@ -512,27 +292,147 @@
 				"LengthContent"
 			],
 			[
+				"Le",
+				"LengthContent"
+			],
+			[
 				"Lengt",
 				"LengthContent"
+			],
+			[
+				"motif",
+				"motif2"
+			],
+			[
+				"Ran",
+				"RnaString"
+			],
+			[
+				"ha",
+				"hamming_distance"
+			],
+			[
+				"gc",
+				"gc_content2"
+			],
+			[
+				"count",
+				"count_data2"
+			],
+			[
+				"Test",
+				"TestInput"
+			],
+			[
+				"Rna",
+				"RnaTestString"
+			],
+			[
+				"String",
+				"StringContent"
+			],
+			[
+				"Con",
+				"Content1"
+			],
+			[
+				"Bina",
+				"BinaryContent"
+			],
+			[
+				"Spli",
+				"SplittedList"
+			],
+			[
+				"split",
+				"split_id_from_content"
+			],
+			[
+				"transla",
+				"translate"
+			],
+			[
+				"translate",
+				"translate_two_a"
+			],
+			[
+				"Temp",
+				"TempDna"
+			],
+			[
+				"read",
+				"read_lines2"
+			],
+			[
+				"spawn",
+				"spawn_monitor"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"spa",
+				"spawn_monitor"
+			],
+			[
+				"Me",
+				"Messages"
+			],
+			[
+				"pass",
+				"pass_messages"
+			],
+			[
+				"Pid",
+				"PidStart"
+			],
+			[
+				"Pass",
+				"pass_messages"
+			],
+			[
+				"max",
+				"max_ring"
+			],
+			[
+				"Fun",
+				"Function"
+			],
+			[
+				"wait",
+				"wait_for_message"
+			],
+			[
+				"Proce",
+				"ProcessToPassOnTo"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "solver_server.erl",
+			"file": "solve_server.erl",
 			"settings":
 			{
-				"buffer_size": 7590,
-				"line_ending": "Unix"
+				"buffer_size": 7154,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "answers.erl",
 			"settings":
 			{
-				"buffer_size": 3842,
-				"line_ending": "Unix"
+				"buffer_size": 4626,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Roy/Downloads/dhcpsrv2.4.3/readme.txt",
+			"settings":
+			{
+				"buffer_size": 5447,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -543,19 +443,7 @@
 		"selected_items":
 		[
 			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
 				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"packa",
-				"Package Control: List Packages"
-			],
-			[
-				"iNSTA",
 				"Package Control: Install Package"
 			],
 			[
@@ -595,6 +483,10 @@
 				"Package Control: Remove Package"
 			],
 			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
 				"in",
 				"Package Control: Install Package"
 			],
@@ -605,6 +497,10 @@
 			[
 				"pack",
 				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
 			],
 			[
 				"pac",
@@ -619,14 +515,13 @@
 				"Git: Log All"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
 		"height": 126.0,
 		"history":
 		[
-			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
 			"erl",
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"c(ex12).",
@@ -645,141 +540,144 @@
 	},
 	"expanded_folders":
 	[
+		"/C/Users/Roy/src/ProjectEulerErlang",
+		"/C/Users/Roy/src/ProjectEulerErlang/source",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/data"
 	],
 	"file_history":
 	[
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p049.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p060.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p060_test.data",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p051.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p054.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/dns.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/dns.beam",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p079.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p072.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/my_math.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p071.erl",
-		"/Users/royveshovda/src/rveshovda.github.io/GemFile",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/helper.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p042.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p097.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p063.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p056.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p055.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p053.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p052.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p048.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p043.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p041.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p038.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p037.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p035.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p033.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p032.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p030.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p029.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p025.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p024.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p015.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p004.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p022.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p020.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p099.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p059.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p069.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/primes.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/prime_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p050.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/common.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p057.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p058.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/calculator.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p036.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_1_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_20_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_19_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_18_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_17_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_16_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_15_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_14_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_13_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_12_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_11_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_10_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_9_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_8_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_7_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_6_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_5_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_4_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_3_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/solver_level_2_server.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p047.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p046.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/erl_crash.dump",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p067.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p018.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p045.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p044.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p040.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p039.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p034.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p031.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p028.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p027.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p026.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p023.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p021.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p011.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p012.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p013.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p014.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p016.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p017.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p019.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p001.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p002.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p003.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p005.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p006.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p007.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p008.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p009.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/source/p010.erl",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P045.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P038.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P044.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P037.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P033.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P049.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P036.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P035.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P034.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P041.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P010.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P024.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P032.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P031.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P030.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P050.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P048.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P047.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P046.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P043.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P042.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P028.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P027.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P026.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P023.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/P067.md",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/p018_triangle.txt",
-		"/Users/royveshovda/src/ProjectEulerErlang/Problems/p067_triangle_test.txt"
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p060.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p071.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p096.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p081.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p054.erl",
+		"/C/Program Files/KDiff3/COPYING.txt",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/answers.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p092.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/my_math.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p073.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p012.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p011.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p013.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p014.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p015.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p016.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p017.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p018.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p019.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p020.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p021.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p056.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p099.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p097.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p079.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p069.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p068.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p067.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p063.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p059.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p058.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p057.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p055.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p053.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p052.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p051.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p050.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p049.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p048.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p047.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p046.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p045.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p044.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p043.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p042.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p041.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p040.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p039.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p038.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p037.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p036.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p035.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p034.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p033.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p032.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p031.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p030.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p025.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p024.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p023.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p022.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p029.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p028.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p027.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p026.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_10_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_11_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_12_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_13_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_14_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_15_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_16_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_17_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_18_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_19_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_1_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_20_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_2_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_3_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_4_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_5_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_6_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_7_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_8_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_level_9_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p006.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p007.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p008.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p009.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p010.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p003.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p005.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p002.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p001.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/README.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/p004.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solver_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/calculator.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P040.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P042.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P039.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P043.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P038.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/prime_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/primes.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/skew_kv.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P053.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P054.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P055.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P069.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P068.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P066.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P065.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P064.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P063.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P062.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P061.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P060.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P059.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P058.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P057.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P056.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P097.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P052.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P051.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P080.md",
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P079.md"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -794,27 +692,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"Permu",
-			"into_list",
-			"calculator",
-			"is_palindrome",
-			"group",
-			"palindrome",
-			"get_digits",
-			"permute",
-			"perm",
-			"factorial",
-			"get_digits",
-			"pow",
-			"factorial",
-			"integer_to_list",
-			"pow",
-			"is_prime",
-			", ",
-			"lists:map",
-			"integer",
-			"'",
-			"++",
+			"primes_below",
+			"6",
+			"\\\"",
 			"buffer.AppendFormat(\"NOTE:{0}\\r\\n\", employee.OfficeName);",
 			"Apply(",
 			"Apply",
@@ -836,9 +716,7 @@
 		"regex": false,
 		"replace_history":
 		[
-			" ",
-			"\"",
-			","
+			"\""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -849,24 +727,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "solver_server.erl",
+					"file": "solve_server.erl",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7590,
+						"buffer_size": 7154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4079,
-								4079
+								3674,
+								3674
 							]
 						],
 						"settings":
@@ -876,10 +754,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 838.0,
+						"translation.y": 1654.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -888,15 +766,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3842,
+						"buffer_size": 4626,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1893,
-								1899
+								0,
+								0
 							]
 						],
 						"settings":
@@ -905,7 +783,35 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 886.0,
+						"translation.y": 1083.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Roy/Downloads/dhcpsrv2.4.3/readme.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1102,
+								1102
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1938.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -916,7 +822,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -953,14 +859,10 @@
 	{
 		"height": 0.0
 	},
-	"output.variable_get":
-	{
-		"height": 0.0
-	},
 	"project": "ProjectEuler.sublime-project",
 	"replace":
 	{
-		"height": 66.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
