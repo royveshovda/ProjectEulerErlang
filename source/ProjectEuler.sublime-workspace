@@ -411,30 +411,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "solve_server.erl",
-			"settings":
-			{
-				"buffer_size": 7154,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "answers.erl",
-			"settings":
-			{
-				"buffer_size": 4626,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Roy/Downloads/dhcpsrv2.4.3/readme.txt",
-			"settings":
-			{
-				"buffer_size": 5447,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -541,23 +517,23 @@
 	"expanded_folders":
 	[
 		"/C/Users/Roy/src/ProjectEulerErlang",
-		"/C/Users/Roy/src/ProjectEulerErlang/source",
-		"/C/Users/Roy/src/ProjectEulerErlang/source/data"
+		"/C/Users/Roy/src/ProjectEulerErlang/source"
 	],
 	"file_history":
 	[
+		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_server.erl",
+		"/C/Users/Roy/src/ProjectEulerErlang/source/answers.erl",
+		"/C/Users/Roy/Downloads/dhcpsrv2.4.3/readme.txt",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p060.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p071.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p096.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p081.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p054.erl",
 		"/C/Program Files/KDiff3/COPYING.txt",
-		"/C/Users/Roy/src/ProjectEulerErlang/source/answers.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p092.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/my_math.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p073.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p012.erl",
-		"/C/Users/Roy/src/ProjectEulerErlang/source/solve_server.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p011.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p013.erl",
 		"/C/Users/Roy/src/ProjectEulerErlang/source/p014.erl",
@@ -672,8 +648,7 @@
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P097.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P052.md",
 		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P051.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P080.md",
-		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P079.md"
+		"/C/Users/Roy/src/ProjectEulerErlang/Problems/P080.md"
 	],
 	"find":
 	{
@@ -727,96 +702,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "solve_server.erl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7154,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3674,
-								3674
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Erlang/Erlang.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1654.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "answers.erl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4626,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Erlang/Erlang.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1083.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Roy/Downloads/dhcpsrv2.4.3/readme.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5447,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1102,
-								1102
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1938.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
